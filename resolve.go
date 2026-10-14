@@ -44,7 +44,7 @@ func resolve(record map[string]any, fetch fetchFn) map[string]any {
 		ds["decision"] = "skip"
 	}
 	commit, hasCommit := cls["fix_commit"].(string)
-	ds["diff"] = map[string]any{"available": hasCommit}
+	ds["diff"] = diffInfo(commit, hasCommit)
 	if hasCommit {
 		ds["fix_commit"] = commit
 	}
