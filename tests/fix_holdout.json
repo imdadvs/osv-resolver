@@ -1,0 +1,1383 @@
+[
+ {
+  "id": "GO-2026-6198",
+  "ecosystem": "Go",
+  "summary": "Traefik Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "commit + its PR",
+  "candidates": [
+   {
+    "url": "https://github.com/traefik/traefik/commit/655d6324ab4a1475892a958d4bae389720a67ea9",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Fix ExtensionRef filters on backendRefs to resolve against the HTTPRoute namespace",
+    "files": 3,
+    "added": 81,
+    "removed": 3,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/traefik/traefik/pull/13462",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] fix: middleware extensionRef namespace",
+    "files": 3,
+    "added": 81,
+    "removed": 3,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GO-2026-6079",
+  "ecosystem": "Go",
+  "summary": "Gitea: OAuth token introspection returns metadata of tokens issued to other clients (RFC 7662 section 4 violation) in gitea.dev",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "commit + its PR",
+  "candidates": [
+   {
+    "url": "https://github.com/go-gitea/gitea/commit/c9920b7bd0f6ec1f7590f104711b09d55917f9e8",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] fix(oauth): restrict introspection to the token's client (#38042)",
+    "files": 2,
+    "added": 112,
+    "removed": 16,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/go-gitea/gitea/pull/38042",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/7] fix(oauth): restrict introspection to the token's client",
+    "files": 2,
+    "added": 194,
+    "removed": 104,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GO-2025-4034",
+  "ecosystem": "Go",
+  "summary": "MinIO is Vulnerable to Privilege Escalation via Session Policy Bypass in Service Accounts and STS in github.com/minio/minio",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "commit + its PR",
+  "candidates": [
+   {
+    "url": "https://github.com/minio/minio/commit/c1a49490c78e9c3ebcad86ba0662319138ace190",
+    "src": [
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] fix: check sub-policy properly when present (#21642)",
+    "files": 3,
+    "added": 228,
+    "removed": 15,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/minio/minio/pull/21642",
+    "src": [
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] fix: check sub-policy properly when present",
+    "files": 3,
+    "added": 228,
+    "removed": 15,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3fxj-6jh8-hvhx",
+  "ecosystem": "Go",
+  "summary": "chi Has an IP Spoofing Vulnerability in `middleware.RealIP`",
+  "fix_in_data": true,
+  "confidence": "medium",
+  "note": "fix is a 23-commit PR replacing RealIP with ClientIP; label corrected: 3b17157 is PR 967 squash-merged",
+  "candidates": [
+   {
+    "url": "https://github.com/go-chi/chi/pull/967",
+    "src": [
+     "alias:GO-2026-5774:ref_FIX"
+    ],
+    "subject": "[PATCH 01/23] ClientIP middleware proposal, intended to replace RealIP",
+    "files": 7,
+    "added": 1696,
+    "removed": 526,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/go-chi/chi/commit/3b171578ca44dfd75ca3c5cbddc7b44c600a7b49",
+    "src": [
+     "alias:CVE-2026-72815:range_fixed"
+    ],
+    "subject": "feat: middleware.ClientIP, a replacement for RealIP",
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GO-2025-3833",
+  "ecosystem": "Go",
+  "summary": "OAuth2-Proxy has authentication bypass in oauth2-proxy skip_auth_routes due to Query Parameter inclusion in github.com/oauth2-proxy/oauth2-proxy",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "'Merge commit from fork' = private security fork",
+  "candidates": [
+   {
+    "url": "https://github.com/oauth2-proxy/oauth2-proxy/commit/9ffafad4b2d2f9f7668e5504565f356a7c047b77",
+    "src": [
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] Merge commit from fork",
+    "files": 4,
+    "added": 85,
+    "removed": 14,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-23qf-3jf9-h3q9",
+  "ecosystem": "Maven",
+  "summary": "Apache NiFi Insufficient Property Validation vulnerability",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "PR + its commit",
+  "candidates": [
+   {
+    "url": "https://github.com/apache/nifi/pull/7586",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] NIFI-11920 Improved JDBC and JNDI JMS Connection URL Validation",
+    "files": 8,
+    "added": 207,
+    "removed": 9,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/apache/nifi/commit/064550aacc189f39d7ddd2c0446068adf250f1bf",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] NIFI-11920 Improved JDBC and JNDI JMS Connection URL Validation",
+    "files": 8,
+    "added": 207,
+    "removed": 9,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xvch-r4wf-h8w9",
+  "ecosystem": "Maven",
+  "summary": "Improper Certificate Validation in proton-j",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/apache/qpid-proton-j/commit/0cb8ca03cec42120dcfc434561592d89a89a805e",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] PROTON-1962: update some defaults and related handling",
+    "files": 11,
+    "added": 328,
+    "removed": 22,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rhrv-645h-fjfh",
+  "ecosystem": "Maven",
+  "summary": "Apache Avro Java SDK vulnerable to Improper Input Validation",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/apache/avro/commit/a12a7e44ddbe060c3dc731863cad5c15f9267828",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] AVRO-3819: Centralize system properties that limit allocations (#2432)",
+    "files": 9,
+    "added": 605,
+    "removed": 134,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7q4h-pj78-j7vg",
+  "ecosystem": "Maven",
+  "summary": "Authorization service vulnerable to DDos attacks in Apache CFX",
+  "fix_in_data": true,
+  "confidence": "medium",
+  "note": "two related hardening commits; [0] is the main one",
+  "candidates": [
+   {
+    "url": "https://github.com/apache/cxf/commit/40503a53914758759894f704bbf139ae89ace286",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Disallow OAuth2 request_uri by default",
+    "files": 1,
+    "added": 13,
+    "removed": 4,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/apache/cxf/commit/aa789c5c4686597a7bdef2443909ab491fc2bc04",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Make sure both a request + request_uri can't be specified",
+    "files": 1,
+    "added": 11,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6w89-c65w-jx2c",
+  "ecosystem": "Maven",
+  "summary": "Jeecg-boot is vulnerable to SQL injection ",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "subject in Chinese: 'fix SQL injection'",
+  "candidates": [
+   {
+    "url": "https://github.com/jeecgboot/jeecg-boot/commit/0fc374de4745eac52620eeb8caf6a7b76127529a",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] =?UTF-8?q?=E4=BF=AE=E5=A4=8D=20sql=E6=B3=A8=E5=85=A5?= =?UTF-8?q?=E6=BC=8F=E6=B4=9E=20#4393?=",
+    "files": 2,
+    "added": 8,
+    "removed": 6,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wmxv-xphr-5c9g",
+  "ecosystem": "NuGet",
+  "summary": "ImageSharp: BigTIFF IFD count can keep a decoder thread in a non-progressing loop",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "[0] is a 27-commit PR of many validations",
+  "candidates": [
+   {
+    "url": "https://github.com/SixLabors/ImageSharp/pull/3187",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 01/27] Validate decoded image dimensions",
+    "files": 62,
+    "added": 2418,
+    "removed": 734,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/SixLabors/ImageSharp/commit/92b12d72550ebb6be5b1e22e559c361fd863a6ec",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Bound BigTIFF directory entry counts",
+    "files": 2,
+    "added": 20,
+    "removed": 0,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-vjf9-8wqg-xc7r",
+  "ecosystem": "NuGet",
+  "summary": "ChakraCore RCE Vulnerability",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "alias CVE-2018-8510; [0] bundles several CVEs",
+  "candidates": [
+   {
+    "url": "https://github.com/chakra-core/ChakraCore/pull/5764",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/7] [CVE-2018-8473] Edge - Chakra: Stack corruption in the presence of nested inlinees",
+    "files": 10,
+    "added": 48,
+    "removed": 61,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/chakra-core/ChakraCore/commit/9b36ce832c9a81bb51e3b1a39067feadcd1e14d2",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] [CVE-2018-8510] Edge - missing BytecodeUses for IsIn optimization leads to type confusion",
+    "files": 1,
+    "added": 4,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3hcm-6fjc-47qq",
+  "ecosystem": "NuGet",
+  "summary": "NuGet Package Manager Tampering Vulnerability",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/NuGet/NuGet.Client/commit/e32a2ea7096debd3e513188f6779bb1041593326",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Use Directory.CreateDirectory instead of DirectoryUtility to create the obj folder (#2774)",
+    "files": 1,
+    "added": 1,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9f8c-f7h4-xghf",
+  "ecosystem": "NuGet",
+  "summary": "Remote code execution in ChakraCore",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/chakra-core/ChakraCore/pull/6500",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/5] [CVE-2020-1172]",
+    "files": 17,
+    "added": 259,
+    "removed": 56,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-fwqw-2x5x-w566",
+  "ecosystem": "NuGet",
+  "summary": "ImageMagick has Use After Free in MSLStartElement in \"coders/msl.c\"",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/ImageMagick/ImageMagick/commit/257200cb21de23404dce5f8261871845d425dee5",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Run checks before accessing the image (GHSA-fwqw-2x5x-w566).",
+    "files": 1,
+    "added": 10,
+    "removed": 12,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8gcg-vwmw-rxj4",
+  "ecosystem": "Packagist",
+  "summary": "Flarum notifications can leak restricted content",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/flarum/framework/commit/d0a2b95dca57d3dae9a0d77b610b1cb1d0b1766a",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Merge pull request from GHSA-8gcg-vwmw-rxj4",
+    "files": 2,
+    "added": 188,
+    "removed": 0,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4w2w-36vm-c8hf",
+  "ecosystem": "Packagist",
+  "summary": "Mautic allows Relative Path Traversal in assets file upload",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/mautic/mautic/commit/e6aaad99f399c5df1ce6273609920098e5c2564a",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/2] fix: [DPMMA-2734] assets upload path traversal",
+    "files": 2,
+    "added": 63,
+    "removed": 2,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-pxm6-mhxr-q4mj",
+  "ecosystem": "Packagist",
+  "summary": "Grav Vulnerable to Privilege Escalation via Missing Server-Side Validation of groups/access",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/getgrav/grav-plugin-login/commit/3d419a0dabd70aed1fd49afcd5919004a4141da1",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Security: registration privilege strip + Grav 2.0 nonce-key bridge",
+    "files": 3,
+    "added": 40,
+    "removed": 4,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-vj2j-6g3w-4662",
+  "ecosystem": "Packagist",
+  "summary": "Silverstripe Missing CSRF protection in login form",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/silverstripe/silverstripe-framework/commit/a6bd22ab2f3b11a054d20be13306a19089510989",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] [SS-2016-006] FIX dont disable XSS for login forms",
+    "files": 2,
+    "added": 37,
+    "removed": 5,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8r7x-qq55-74v2",
+  "ecosystem": "Packagist",
+  "summary": "Moodle does not enforce the forceloginforprofiles setting",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/moodle/moodle/commit/3ecc63e9dbe29c6a5a8f65fa8e7980ba0fffb5a8",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] MDL-37481 user: fixed bug when logged in as guest",
+    "files": 1,
+    "added": 7,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-674p-xv2x-rf3g",
+  "ecosystem": "PyPI",
+  "summary": "Litestar has potential log injection in exception logging",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/litestar-org/litestar/commit/03b5813d4f448dd710af9ba6252d798cb9fc087f",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Merge commit from fork",
+    "files": 2,
+    "added": 3,
+    "removed": 3,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "PYSEC-2026-1038",
+  "ecosystem": "PyPI",
+  "summary": "TensorFlow vulnerable to segfault in `QuantizedRelu` and `QuantizedRelu6`",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/tensorflow/tensorflow/commit/49b3824d83af706df0ad07e4e677d88659756d89",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Add IsScalar (rank == 0) check to min/max input tensors for QuantizedAdd/Relu/Relu6 op.",
+    "files": 4,
+    "added": 112,
+    "removed": 12,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "PYSEC-2026-1590",
+  "ecosystem": "PyPI",
+  "summary": "Lord of Large Language Models vulnerable to Observable Discrepancy attack via authenticate_user function",
+  "fix_in_data": true,
+  "confidence": "medium",
+  "note": "the referenced fix commit now returns 404",
+  "candidates": [
+   {
+    "url": "https://github.com/parisneo/lollms/commit/f78437f7b5aa39a78c6201912faf4e0645a38c48",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "",
+    "files": null,
+    "added": null,
+    "removed": null,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "PYSEC-2014-113",
+  "ecosystem": "PyPI",
+  "summary": "The VMWare driver in OpenStack Compute (Nova) 2013.2 through 2013.2.2 does not properly put VMs into RESCUE status, which allows remote authenticated users to b",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "same fix on two branches",
+  "candidates": [
+   {
+    "url": "https://github.com/openstack/nova/commit/b3cc3f62a60662e5bb82136c0cfa464592a6afe9",
+    "src": [
+     "alias:GHSA-jv34-xvjq-ppch:ref_WEB"
+    ],
+    "subject": "[PATCH] VMware: ensure rescue instance is deleted when instance is deleted",
+    "files": 2,
+    "added": 65,
+    "removed": 17,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/openstack/nova/commit/efb66531bc37ee416778a70d46c657608ca767af",
+    "src": [
+     "alias:GHSA-jv34-xvjq-ppch:ref_WEB"
+    ],
+    "subject": "[PATCH] VMware: ensure rescue instance is deleted when instance is deleted",
+    "files": 2,
+    "added": 65,
+    "removed": 16,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-q6mv-284r-mp36",
+  "ecosystem": "PyPI",
+  "summary": "check-jsonschema default caching for remote schemas allows for cache confusion",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/python-jsonschema/check-jsonschema/commit/c52714b85e6725b1b24516fbdedacb333b939152",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/2] Internal refactor: no default cache dirname",
+    "files": 8,
+    "added": 105,
+    "removed": 109,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wmjf-jpjj-9f3j",
+  "ecosystem": "RubyGems",
+  "summary": "RuboCop gem Insecure use of /tmp",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/rubocop/rubocop/commit/dcb258fabd5f2624c1ea0e1634763094590c09d7",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] [Fix #4336] Store rubocop_cache in safer directories",
+    "files": 5,
+    "added": 72,
+    "removed": 34,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-88cv-mj24-8w3q",
+  "ecosystem": "RubyGems",
+  "summary": "arr-pm vulnerable to arbitrary shell execution when extracting or listing files contained in a malicious rpm.",
+  "fix_in_data": true,
+  "confidence": "medium",
+  "note": "two PRs, both part of the fix",
+  "candidates": [
+   {
+    "url": "https://github.com/jordansissel/ruby-arr-pm/pull/14",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/2] Add tests for RPM::File#files",
+    "files": 4,
+    "added": 29,
+    "removed": 44,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/jordansissel/ruby-arr-pm/pull/15",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Only attempt extraction if a known payload compressor is used.",
+    "files": 3,
+    "added": 52,
+    "removed": 2,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7vxr-6cxg-j3x8",
+  "ecosystem": "RubyGems",
+  "summary": "OS Command Injection in ftpd",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/wconrad/ftpd/commit/828064f1a0ab69b2642c59cab8292a67bb44182c",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Close code injection vulnerabilit in LIST and NLST.",
+    "files": 7,
+    "added": 16,
+    "removed": 15,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-5cm2-9h8c-rvfx",
+  "ecosystem": "RubyGems",
+  "summary": "TZInfo relative path traversal vulnerability allows loading of arbitrary files",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "same fix on two branches",
+  "candidates": [
+   {
+    "url": "https://github.com/tzinfo/tzinfo/commit/9905ca93abf7bf3e387bd592406e403cd18334c7",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Fix directory traversal in Timezone.get when using Ruby data source",
+    "files": 4,
+    "added": 9,
+    "removed": 2,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/tzinfo/tzinfo/commit/9eddbb5c0e682736f61d0dd803b6031a5db9eadf",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Fix directory traversal in Timezone.get",
+    "files": 3,
+    "added": 8,
+    "removed": 2,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-qh4w-7pw3-p4rp",
+  "ecosystem": "RubyGems",
+  "summary": "BSON rubygem contains potential denial of service",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "[1] introduced the code; [2] is another project",
+  "candidates": [
+   {
+    "url": "https://github.com/mongodb/bson-ruby/commit/976da329ff03ecdfca3030eb6efe3c85e6db9999",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Use \\A \\z for checking regex on legal",
+    "files": 1,
+    "added": 1,
+    "removed": 1,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/mongodb/bson-ruby/commit/fef6f75413511d653c76bf924a932374a183a24f",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Adding in object id functionality",
+    "files": 4,
+    "added": 581,
+    "removed": 9,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/mongoid/moped/commit/dd5a7c14b5d2e466f7875d079af71ad19774609b",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Merge Replica Set Refactor",
+    "files": 42,
+    "added": 2057,
+    "removed": 3322,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "RUSTSEC-2026-0333",
+  "ecosystem": "crates.io",
+  "summary": "Resource budgets not enforced on the typed deserialization path",
+  "fix_in_data": true,
+  "confidence": "low",
+  "note": "fix buried in an 18-commit PR that starts with dependency bumps",
+  "candidates": [
+   {
+    "url": "https://github.com/sebastienrousseau/noyalib/pull/470",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 01/18] deps(cargo)(deps): bump rustix from 1.1.4 to 1.1.5",
+    "files": 118,
+    "added": 1136,
+    "removed": 411,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4g74-7cff-xcv8",
+  "ecosystem": "crates.io",
+  "summary": "youki container escape via \"masked path\" abuse due to mount race conditions",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/youki-dev/youki/commit/5886c91073b9be748bd8d5aed49c4a820548030a",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Merge commit from fork",
+    "files": 18,
+    "added": 1038,
+    "removed": 388,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "RUSTSEC-2026-0114",
+  "ecosystem": "crates.io",
+  "summary": "Panic when allocating a table exceeding the size of the host's address space",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/pull/13245",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Fix panicking overflow when calculating table sizes",
+    "files": 2,
+    "added": 20,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "RUSTSEC-2024-0010",
+  "ecosystem": "crates.io",
+  "summary": "Improper comparison of different-length signatures",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "PR + its commit",
+  "candidates": [
+   {
+    "url": "https://github.com/svix/svix-webhooks/pull/1190",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH] Rust verification library: fix comparison of different length signatures",
+    "files": 3,
+    "added": 69,
+    "removed": 4,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/svix/svix-webhooks/commit/958821bd3b956d1436af65f70a0964d4ffb7daf6",
+    "src": [
+     "alias:GHSA-747x-5m58-mq97:ref_WEB"
+    ],
+    "subject": "[PATCH] Rust verification library: fix comparison of different length signatures (#1190)",
+    "files": 3,
+    "added": 69,
+    "removed": 4,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "RUSTSEC-2026-0182",
+  "ecosystem": "crates.io",
+  "summary": "Leak in WASIp1 `fd_renumber` implementation",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "PR + backports to four release branches",
+  "candidates": [
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/pull/13650",
+    "src": [
+     "ref_WEB"
+    ],
+    "subject": "[PATCH 1/2] Fix leak in `fd_renumber`",
+    "files": 4,
+    "added": 56,
+    "removed": 27,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/commit/100bfe27253d2ce5154ddddf66d06e30f3fa6824",
+    "src": [
+     "alias:GHSA-3p27-qvp9-27qf:ref_WEB"
+    ],
+    "subject": "[PATCH] [44.0.x] Fix leak in `fd_renumber` (#13647)",
+    "files": 4,
+    "added": 61,
+    "removed": 22,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/commit/36b305d827149ac0336ddcbc0a378c303339d195",
+    "src": [
+     "alias:GHSA-3p27-qvp9-27qf:ref_WEB"
+    ],
+    "subject": "[PATCH] [36.0.x] Fix leak in `fd_renumber` (#13646)",
+    "files": 7,
+    "added": 71,
+    "removed": 42,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/commit/72493b11ed5df382c92a9dfb8b6bc064e471f1cd",
+    "src": [
+     "alias:GHSA-3p27-qvp9-27qf:ref_WEB"
+    ],
+    "subject": "[PATCH] [24.0.x] Fix leak in `fd_renumber` (#13644)",
+    "files": 7,
+    "added": 71,
+    "removed": 42,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/commit/e9fbe974c9698edef117323d981e13caf2097c13",
+    "src": [
+     "alias:GHSA-3p27-qvp9-27qf:ref_WEB"
+    ],
+    "subject": "[PATCH] [45.0.x] Fix leak in `fd_renumber` (#13648)",
+    "files": 4,
+    "added": 61,
+    "removed": 22,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/bytecodealliance/wasmtime/commit/f069f125cb77a4a3dced19a77d73790610678622",
+    "src": [
+     "alias:GHSA-3p27-qvp9-27qf:ref_WEB"
+    ],
+    "subject": "[PATCH] Fix leak in `fd_renumber` (#13650)",
+    "files": 4,
+    "added": 56,
+    "removed": 26,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2021-38647",
+  "ecosystem": "GIT",
+  "summary": "Open Management Infrastructure (OMI) Remote Code Execution Vulnerability",
+  "fix_in_data": true,
+  "confidence": "medium",
+  "note": "'Enhanced security' commit, range only",
+  "candidates": [
+   {
+    "url": "https://github.com/microsoft/omi/commit/4ce2cf1cb0aa656b8eb934c5acc3f4d6a6796bfa",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] Enhanced security",
+    "files": 7,
+    "added": 117,
+    "removed": 16,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-19474",
+  "ecosystem": "GIT",
+  "summary": "@fastify/multipart vulnerable to Denial of Service via temporary file leak on aborted upload",
+  "fix_in_data": false,
+  "confidence": "high",
+  "note": "version bump",
+  "candidates": [
+   {
+    "url": "https://github.com/fastify/fastify-multipart/commit/6c4478afd699f8e8190e60fa8debccc6e7e5ed0c",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] Bumped v10.1.1",
+    "files": 1,
+    "added": 1,
+    "removed": 1,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-82240",
+  "ecosystem": "GIT",
+  "summary": "Budibase before 3.41.3 Privilege Escalation via User Update API",
+  "fix_in_data": false,
+  "confidence": "high",
+  "note": "version bump",
+  "candidates": [
+   {
+    "url": "https://github.com/budibase/budibase/commit/0f1a20e532119cb4b354840e219072e2ed277f32",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] Bump version to 3.41.3",
+    "files": 1,
+    "added": 1,
+    "removed": 1,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "CVE-2021-31255",
+  "ecosystem": "GIT",
+  "summary": "Buffer overflow in the abst_box_read function in MP4Box in GPAC 1.0.1 allows attackers to cause a denial of service or execute arbitrary code via a crafted file",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/gpac/gpac/commit/758135e91e623d7dfe7f6aaad7aeb3f791b7a4e5",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] fixed #1733",
+    "files": 1,
+    "added": 30,
+    "removed": 5,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-69242",
+  "ecosystem": "GIT",
+  "summary": "libvips: Integer overflow leading to heap buffer overflow leading to possible attacker-controlled mmap-resident write",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "[1] is an unrelated fix",
+  "candidates": [
+   {
+    "url": "https://github.com/libvips/libvips/commit/c72f50927413cd2451837d9813f954bc5d88f548",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] ensure scanlines fit in INT_MAX (#5012)",
+    "files": 2,
+    "added": 6,
+    "removed": 0,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/libvips/libvips/commit/3664cfc5dc2c5661288f5bf5a85ccc51c64c1626",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] fix: undeprecate old-style radload (#5069)",
+    "files": 2,
+    "added": 1,
+    "removed": 9,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/libvips/libvips/pull/5012",
+    "src": [
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] ensure scanlines fit in INT_MAX",
+    "files": 2,
+    "added": 6,
+    "removed": 0,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-58196",
+  "ecosystem": "GIT",
+  "summary": "ToolHive: SSRF in remote MCP server authentication discovery (host-side, bypasses container isolation)",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "[1] is the release",
+  "candidates": [
+   {
+    "url": "https://github.com/stacklok/toolhive/commit/4ea6afb9048ddec1d56875fa9e0da36d65c15966",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] Merge commit from fork",
+    "files": 10,
+    "added": 399,
+    "removed": 42,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/stacklok/toolhive/commit/493d030ed24b8c012db4c5717475a2386f5b72ce",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] Release v0.31.0 (#5628)",
+    "files": 6,
+    "added": 14,
+    "removed": 14,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "CVE-2022-23514",
+  "ecosystem": "GIT",
+  "summary": "Inefficient Regular Expression Complexity in Loofah",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "label corrected: the fix is linked from alias GHSA-486f-hjj9-9vhh",
+  "candidates": [
+   {
+    "url": "https://github.com/flavorjones/loofah/commit/3f8806300089135f7832a59aa2689a6674d37897",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] version bump to v2.19.1",
+    "files": 2,
+    "added": 10,
+    "removed": 1,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/flavorjones/loofah/commit/a6e0a1ab90675a17b1b2be189129d94139e4b143",
+    "src": [
+     "alias:GHSA-486f-hjj9-9vhh:ref"
+    ],
+    "subject": "fix: replace slow regex attribute check with crass parser",
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2024-56519",
+  "ecosystem": "GIT",
+  "summary": "An issue was discovered in TCPDF before 6.8.0. setSVGStyles does not sanitize the SVG font-family attribute.",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "[0] is a 14-commit batch",
+  "candidates": [
+   {
+    "url": "https://github.com/tecnickcom/tcpdf/commit/14ffa0e308f5634aa2489568b4b90b24073b6731",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH 01/14] Internal link to named destination does not require conversion",
+    "files": 11,
+    "added": 122,
+    "removed": 97,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/tecnickcom/tcpdf/commit/c9f41cbb84880bdb4fc3e0a9d287214d1ac4d7f4",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] Sanitize font-family attribute.",
+    "files": 1,
+    "added": 1,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-59206",
+  "ecosystem": "GIT",
+  "summary": "n8n: Prototype Pollution via Workflow Credentials Leads to Unauthenticated User and Project Enumeration",
+  "fix_in_data": false,
+  "confidence": "high",
+  "note": "two release commits",
+  "candidates": [
+   {
+    "url": "https://github.com/n8n-io/n8n/commit/2320517c9a1ec061e722bfcb153b9dd4eccc9f27",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] :rocket: Release 1.123.61 (#32926)",
+    "files": 22,
+    "added": 24,
+    "removed": 21,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/n8n-io/n8n/commit/a4d0dfce294064026be1a6a246e6da348fea1485",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] :rocket: Release 2.27.4 (#32925)",
+    "files": 28,
+    "added": 41,
+    "removed": 27,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "CVE-2022-35981",
+  "ecosystem": "GIT",
+  "summary": "`CHECK` fail in `FractionalMaxPoolGrad` in TensorFlow",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "others are release notes / flaky tests",
+  "candidates": [
+   {
+    "url": "https://github.com/tensorflow/tensorflow/commit/dd7b8a3c1714d0052ce4b4a2fd8dcef927439a24",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH 1/3] Insert release notes place-fill",
+    "files": 1,
+    "added": 37,
+    "removed": 6,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/tensorflow/tensorflow/commit/0516d4d8bced506cae97dc3cb45dbd2fe4311f26",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH 1/3] Insert release notes place-fill",
+    "files": 1,
+    "added": 39,
+    "removed": 7,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/tensorflow/tensorflow/commit/d8ce9f9c301d021a69953134185ab728c1c248d3",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] Disable flaky tests",
+    "files": 2,
+    "added": 3,
+    "removed": 0,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/tensorflow/tensorflow/commit/8741e57d163a079db05a7107a7609af70931def4",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] Fix security vulnerability with FractionalMaxPoolGrad",
+    "files": 2,
+    "added": 37,
+    "removed": 10,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-3549",
+  "ecosystem": "GIT",
+  "summary": "ECH parsing heap buffer overflow",
+  "fix_in_data": true,
+  "confidence": "medium",
+  "note": "fix inside a 5-commit PR; [0] is the release",
+  "candidates": [
+   {
+    "url": "https://github.com/wolfssl/wolfssl/commit/922d04b3568c6428a9fb905ddee3ef5a68db3108",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] prepare for release 5.9.0",
+    "files": 9,
+    "added": 496,
+    "removed": 161,
+    "is_fix": false
+   },
+   {
+    "url": "https://github.com/wolfSSL/wolfssl/pull/9817",
+    "src": [
+     "ref_FIX"
+    ],
+    "subject": "[PATCH 1/5] Fix CRL_STATIC_REVOKED_LIST binary search bugs in FindRevokedSerial",
+    "files": 7,
+    "added": 439,
+    "removed": 26,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-76206",
+  "ecosystem": "GIT",
+  "summary": "phpMyFAQ before 4.1.7 Information Disclosure via PDF Export",
+  "fix_in_data": false,
+  "confidence": "high",
+  "note": "release commit",
+  "candidates": [
+   {
+    "url": "https://github.com/thorsten/phpmyfaq/commit/28d6f641c16e3015d51d0a01d14841b845251f35",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] chore: v4.1.6 release",
+    "files": 2,
+    "added": 3,
+    "removed": 2,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-56114",
+  "ecosystem": "GIT",
+  "summary": "dhcpcd Stack Out-of-Bounds Write in dhcp6_makemessage()",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "",
+  "candidates": [
+   {
+    "url": "https://github.com/networkconfiguration/dhcpcd/commit/2f00c7bfc408b6582d331932dfa47829c4819029",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] DHCPv6: Prefix exclude option can be 17 octets (#671)",
+    "files": 1,
+    "added": 1,
+    "removed": 1,
+    "is_fix": true
+   }
+  ]
+ },
+ {
+  "id": "CVE-2026-72862",
+  "ecosystem": "GIT",
+  "summary": "Dokploy: OS Command Injection via dockerImage field in database service deployment functions \u2192 HOST RCE",
+  "fix_in_data": true,
+  "confidence": "high",
+  "note": "[1] is an unrelated feature",
+  "candidates": [
+   {
+    "url": "https://github.com/dokploy/dokploy/commit/b24202e69b244f0ece8d2f56e99cad9bb5e1a248",
+    "src": [
+     "range_fixed",
+     "ref_FIX"
+    ],
+    "subject": "[PATCH] fix(security): escape dockerImage in database service remote docker pull",
+    "files": 7,
+    "added": 53,
+    "removed": 6,
+    "is_fix": true
+   },
+   {
+    "url": "https://github.com/dokploy/dokploy/commit/8b868c66d6672be40b86315a704ea1b3b09cb2d3",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH 1/2] feat(ai): allow organizations to define custom AI provider presets",
+    "files": 6,
+    "added": 279,
+    "removed": 9,
+    "is_fix": false
+   }
+  ]
+ },
+ {
+  "id": "CVE-2023-50339",
+  "ecosystem": "GIT",
+  "summary": "Stored cross-site scripting vulnerability exists in the User Management (/admin/users) page of GROWI versions prior to v6.1.11. If this vulnerability is exploit",
+  "fix_in_data": false,
+  "confidence": "high",
+  "note": "release commit",
+  "candidates": [
+   {
+    "url": "https://github.com/growilabs/growi/commit/7d739a99fd0ceb10606f0e7b3e89408afe3baa71",
+    "src": [
+     "range_fixed"
+    ],
+    "subject": "[PATCH] Release v6.1.11",
+    "files": 15,
+    "added": 33,
+    "removed": 25,
+    "is_fix": false
+   }
+  ]
+ }
+]

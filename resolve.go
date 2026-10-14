@@ -44,9 +44,18 @@ func resolve(record map[string]any, fetch fetchFn) map[string]any {
 		ds["decision"] = "skip"
 	}
 	commit, hasCommit := cls["fix_commit"].(string)
-	ds["diff"] = diffInfo(commit, hasCommit)
+	if d, checked := cls["diff"].(map[string]any); checked {
+		ds["diff"] = d // classify already read this patch
+	} else {
+		ds["diff"] = diffInfo(commit, hasCommit)
+	}
 	if hasCommit {
 		ds["fix_commit"] = commit
+	}
+	for _, key := range []string{"fix_commits", "fix_confidence", "rejected"} {
+		if v, ok := cls[key]; ok {
+			ds[key] = v
+		}
 	}
 	if via, ok := cls["resolved_via"].(string); ok {
 		ds["resolved_via"] = via
