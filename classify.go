@@ -5,7 +5,17 @@ import "strings"
 // findFixCommit returns a fixing-commit URL and where it came from, or "", "".
 // A GIT range's `fixed` event is always a real commit, so it is preferred over
 // a FIX reference, which OSV sometimes points at an advisory page.
+// gitFix is one fixing commit and the repo it lives in. A struct is a small
+// typed record: two named string fields we can carry around together.
+type gitFix struct {
+	repo   string
+	commit string
+}
+
 func findFixCommit(record map[string]any) (url string, source string) {
+	// Collect every GIT `fixed` commit in the record (a record may list
+	// several projects, e.g. MySQL that bundles libpng).
+	var fixes []gitFix
 	affected, _ := record["affected"].([]any)
 	for _, a := range affected {
 		am, _ := a.(map[string]any)
@@ -21,11 +31,17 @@ func findFixCommit(record map[string]any) (url string, source string) {
 			for _, e := range events {
 				em, _ := e.(map[string]any)
 				if fixed, ok := em["fixed"].(string); ok && repo != "" {
-					return repo + "/commit/" + fixed, "range"
+					fixes = append(fixes, gitFix{repo: repo, commit: fixed})
 				}
 			}
 		}
 	}
+	if len(fixes) > 0 {
+		best := pickBestFix(fixes, record)
+		return best.repo + "/commit/" + best.commit, "range"
+	}
+
+	// No GIT commit: fall back to a FIX reference.
 	references, _ := record["references"].([]any)
 	for _, ref := range references {
 		rm, _ := ref.(map[string]any)
@@ -35,6 +51,27 @@ func findFixCommit(record map[string]any) (url string, source string) {
 		}
 	}
 	return "", ""
+}
+
+// pickBestFix chooses the fix whose repo name appears in the advisory's
+// summary/details, so a record listing several projects resolves to the one
+// that is actually vulnerable. Falls back to the first fix when none matches.
+func pickBestFix(fixes []gitFix, record map[string]any) gitFix {
+	summary, _ := record["summary"].(string)
+	details, _ := record["details"].(string)
+	text := strings.ToLower(summary + " " + details)
+	for _, f := range fixes {
+		if name := repoName(f.repo); name != "" && strings.Contains(text, name) {
+			return f
+		}
+	}
+	return fixes[0]
+}
+
+// repoName is the last path segment of a repo URL, lowercased: the project name.
+func repoName(repo string) string {
+	parts := strings.Split(repo, "/")
+	return strings.ToLower(parts[len(parts)-1])
 }
 
 // findFixedVersion reports whether a non-GIT range carries a `fixed` event:
