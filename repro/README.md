@@ -52,6 +52,9 @@ that shows it. Grouped by what it would take to fix:
 ## Files
 
 - `tools/gorepro.py` — reproduce one advisory (clone, pick Go version, run twice).
+- `tools/partial_revert.py` — extract and reverse selected non-test hunks.
+- `tools/pile_a_eval.py` — attribute structured Go test failures to the selected test.
+- `tools/run_pile_a.py` — run and resume Pile A from the saved results.
 - `tools/gochain.py` — osv-resolver → gorepro for a list of advisories.
 - `tools/gosev.py` — list unique Go advisories by severity.
 - `tools/run.sh` — six parallel workers.
@@ -59,6 +62,35 @@ that shows it. Grouped by what it would take to fix:
 - `results/failure_reasons.json` — the 510 not-proven cases, each with a reason.
 - `results/go-critical-high-logs.tgz` — every test run's output (the evidence).
 - `handcheck-30.md` — manual check of 30 proven cases.
+
+## Pile A: tests that need the new API
+
+The partial-revert mode follows `PILE-A-SPEC.md`: start at a passing fixed
+commit, keep its tests and testdata, and reverse singles, pairs, then all code
+hunks. Each successful candidate must fail the same developer test twice, and
+the fixed checkout must pass again. Results record `method: partial_revert`;
+missing APIs that prevent a full code revert from compiling are routed to
+`needs_test_adaptation`.
+
+Run one case from the repository root:
+
+```bash
+python3 -I repro/tools/run_pile_a.py /tmp/pile-a repro/results/pile-a.jsonl \
+  --id GO-2026-6372 --case-budget 50
+```
+
+Run the whole Pile A list by omitting `--id`. Repeating the command resumes
+incomplete cases and skips terminal results. Candidate logs, patch evidence,
+and checkpoints live in the work directory. Use `--max-attempts` to control
+each harness invocation and `--case-budget` to limit attempts in one batch
+run; incomplete searches retain `search_incomplete`.
+
+For a new individual case:
+
+```bash
+python3 -I repro/tools/gorepro.py /tmp/pile-a ADVISORY_ID REPO_URL FIX_SHA \
+  --pile-a --max-attempts 25
+```
 
 ## Honest limits
 

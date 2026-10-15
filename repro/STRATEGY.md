@@ -11,7 +11,7 @@ plain test run is the judge.
 | 1. Baseline | always | run the fix's own test on the parent (want fail) and the fix (want pass) | no | built |
 | 2. Build-setup rescue | build failed | add `-tags`, drop old `-mod`, stub an unbuilt frontend, sqlite tags, widen `-run`, install the named C header, set the named env var; retry | no | partly built |
 | 3. Provide infrastructure | test needs a service | start a database/sidecar beside the test; a cluster/Docker daemon → bucket `needs_cluster` | no | spec |
-| 4. Partial revert | test won't compile on the parent (needs a symbol the fix added) | start from the fixed code, undo only the fix's own hunks, re-run; can't isolate → bucket `needs_test_adaptation` | no | spec (PILE-A-SPEC.md) |
+| 4. Partial revert | test won't compile on the parent (needs a symbol the fix added) | start from the fixed code, undo only the fix's own hunks, re-run; can't isolate → bucket `needs_test_adaptation` | no | built (`gorepro.py --pile-a`; PILE-A-SPEC.md) |
 | 5. Try other commits | test passes on the parent too | the picked commit may be wrong — try the other candidate commits; run 3× to rule out a flaky test | no | spec |
 | 6. Generate/adapt a test | no usable test exists | an LLM writes or adapts a test; the same fail-before/pass-after run decides | yes | later |
 | 7. Verdict | end | `PROVEN(rung N)` or `NOT_PROVEN(reason)` — every advisory, no "unknown" | — | — |

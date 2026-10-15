@@ -1,6 +1,6 @@
 # Pile A — reproducing fixes whose test needs the new code (design spec)
 
-**Status: specification only, not yet implemented.**
+**Status: implemented by `tools/gorepro.py --pile-a` and `tools/run_pile_a.py`.**
 
 ## The problem
 
@@ -53,3 +53,37 @@ From `results/go-critical-high.jsonl`: `fix_commit`, `fix_sha`, `before`,
 `tests`, `pkgs`, `go_image`. The harness in `tools/gorepro.py` already clones,
 picks the Go version, and runs tests per module — the revert loop slots in
 between steps 3 (fixed run) and 4 (old run) there.
+
+## Running it
+
+From the repository root, run a selected saved case:
+
+```bash
+python3 -I repro/tools/run_pile_a.py /tmp/pile-a repro/results/pile-a.jsonl \
+  --id GO-2026-6372 --case-budget 50
+```
+
+Omit `--id` to process every `symbol_from_fix_missing` case. The runner uses
+the recorded Go image and verifies the saved fix/before SHA prefixes before
+testing. The 245 labeled cases include 22 whose recorded fixed baseline did
+not pass; they must pass a fresh baseline or fall back to normal diagnosis.
+
+Each invocation tries up to `--max-attempts` new candidates (default 25).
+Checkpoints under `WORKDIR/pile-a/ID/attempts.jsonl` allow the same command to
+resume. `--case-budget` limits candidate attempts during one batch run; it is
+optional. A budget or unresolved execution error yields `search_incomplete`,
+which is resumable and is not a negative result.
+
+The search uses zero-context Git hunks so nearby changes remain separable.
+New/deleted files, binary changes, and mode changes are atomic candidates.
+Every attempt starts from a clean fixed checkout. A successful candidate is
+run a second time, then the fixed checkout must pass again. The output keeps
+`verdict: reproduced` and adds `method: partial_revert`, full commit IDs, hunk
+metadata, logs, and a patch. The saved patch is the original fix subset;
+apply it with `git apply --reverse` at the fixed commit to reconstruct the
+candidate. Assertions and tests are preserved from the developer's commit.
+
+Compile failures, external process timeouts, changed test commands, and
+unattributed concurrent panics are not proofs. Where a suite has no touched
+top-level `Test` function, the harness selects the package's developer test
+entrypoints and records that fallback in the result.
