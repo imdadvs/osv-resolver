@@ -1,0 +1,3572 @@
+[
+ {
+  "id": "GO-2026-6108",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/JanDeDobbeleer/oh-my-posh/commit/88ddbe0b0a4dd13cc345996108c9869493f2c690"
+ },
+ {
+  "id": "GO-2022-0586",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/hashicorp/go-getter/commit/38e97387488f5439616be60874979433a12edb48"
+ },
+ {
+  "id": "GO-2026-6400",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/ba948639d7f6bd5594ce584072dc68310da87a68"
+ },
+ {
+  "id": "GO-2022-0310",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_env_var",
+  "evidence": "GITEA_ROOT",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/6f5656ab0ebec03fe63898208dabc802c4be46ab"
+ },
+ {
+  "id": "GO-2026-6219",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/seaweedfs/seaweedfs/commit/69da20bdaec923e5a43d8aa71bf3c0a2051fc019"
+ },
+ {
+  "id": "GHSA-j6cw-g6p4-7hch",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/1e3ddd0b7250aa23f489956b5fab8c13d0493a9f"
+ },
+ {
+  "id": "GO-2026-6586",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/klever-io/klever-go/commit/11606a90ccc289f93d0175994733229b332d9cff"
+ },
+ {
+  "id": "GO-2024-2647",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/go-vela/cli/commit/0349a2060c35722e341bf65a4215592c6c4bc5b4"
+ },
+ {
+  "id": "GO-2022-0309",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_env_var",
+  "evidence": "GITEA_ROOT",
+  "fix_commit": "https://github.com/go-gitea/gitea/pull/4840"
+ },
+ {
+  "id": "GO-2022-0893",
+  "verdict": "script_error",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/kubernetes/kubernetes/commit/9e6912384a5bc714f2a780b870944a8cee264a22"
+ },
+ {
+  "id": "GO-2026-5848",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/kubevirt/kubevirt/commit/011eef8129e2c21e0ea496f283ee1676009bc757"
+ },
+ {
+  "id": "GO-2026-5137",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/foxcpp/maddy/commit/6a06337eb41fa87a35697366bcb71c3c962c44ba"
+ },
+ {
+  "id": "GO-2026-5317",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/tilt-dev/tilt/pull/6776"
+ },
+ {
+  "id": "GO-2026-6591",
+  "verdict": "fixed_does_not_pass",
+  "reason": "moved_import_path",
+  "evidence": "no matching versions for query",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/afe108640cf57a17e8b743fbcdad9ae636eb3eb7"
+ },
+ {
+  "id": "GHSA-pvgv-gcp7-v38g",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/a3999bd78a3b97ab22e6b5e9fd478ac57598a954"
+ },
+ {
+  "id": "GO-2026-6281",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/61d68d2d6ee81a5919597d91c736c502d7156859"
+ },
+ {
+  "id": "GO-2026-5296",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/steveiliop56/tinyauth/commit/f26c2171610d5c2dfbba2edb6ccd39490e349803"
+ },
+ {
+  "id": "GHSA-4wjj-jwc9-2x96",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: gpgme.h: No such file",
+  "fix_commit": "https://github.com/containers/podman/pull/15677"
+ },
+ {
+  "id": "GO-2026-6057",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/99f8b3d9a1d32f4c39828e07971455a18191e0b9"
+ },
+ {
+  "id": "GO-2022-0879",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/hashicorp/consul/commit/72f92ae7ca4cabc1dc3069362a9b64ef46941432"
+ },
+ {
+  "id": "GO-2026-6448",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/identrail/identrail/commit/835e40517509d6ef5405c27fbf14f579bedff0e7"
+ },
+ {
+  "id": "GO-2025-4217",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/usememos/memos/commit/769dcd0cf9be83d472829f6e7903b201e42f6b3c"
+ },
+ {
+  "id": "GO-2025-3804",
+  "verdict": "inconclusive_build",
+  "reason": "our_run_filter_missed",
+  "evidence": "[no tests to run]",
+  "fix_commit": "https://github.com/juju/juju/commit/9c21a01221528c4ad6245581d83fdfd52a07de2f"
+ },
+ {
+  "id": "GO-2026-6080",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/74ad781db9c37134ee9280c69a6b1de53801503e"
+ },
+ {
+  "id": "GO-2026-5139",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/forgekeep/nebula-mesh/commit/9d8bcd7667ecd0c2975cc71fb35a02fe131f76f2"
+ },
+ {
+  "id": "GO-2026-6313",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/go-vikunja/vikunja/commit/6895a7765ef1667be4b79df29549d33b9e1ca9ca"
+ },
+ {
+  "id": "GO-2026-6051",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/99f8b3d9a1d32f4c39828e07971455a18191e0b9"
+ },
+ {
+  "id": "GO-2020-0025",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "Expected",
+  "fix_commit": "https://github.com/cloudfoundry/archiver/commit/09b5706aa9367972c09144a450bb4523049ee840"
+ },
+ {
+  "id": "GO-2022-0824",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hashicorp/vault-ssh-helper/commit/83effd08cbcbe4b993d776bd9b39465cd9e4603f"
+ },
+ {
+  "id": "GO-2026-6372",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/rabbitmq/amqp091-go/commit/6beb7b51f59e46ddcf8066ad498dad32491d3be0"
+ },
+ {
+  "id": "GO-2024-2642",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/pterodactyl/wings/commit/d1c0ca526007113a0f74f56eba99511b4e989287"
+ },
+ {
+  "id": "GO-2026-6046",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/42513398c05ca6bdf71da76cb6f9baaebe8cb924"
+ },
+ {
+  "id": "GO-2026-5048",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/iskorotkov/avro/commit/5192df96a158999344ac96ebcb1f7461d626f6d7"
+ },
+ {
+  "id": "GO-2026-6288",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/googleapis/mcp-toolbox/commit/17b41f64531b8fe417c28ada45d1992ba430dc1b"
+ },
+ {
+  "id": "GO-2025-4035",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/0e478b2d895e89143c7732c7b33e16d98ace663d"
+ },
+ {
+  "id": "GO-2026-4736",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/osrg/gobgp/commit/583080a7258e22cc884162e15b078771aa2c2c80"
+ },
+ {
+  "id": "GO-2025-3634",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/traefik/traefik/pull/11684"
+ },
+ {
+  "id": "GO-2022-0630",
+  "verdict": "fixed_does_not_pass",
+  "reason": "moved_import_path",
+  "evidence": "must be imported as ",
+  "fix_commit": "https://github.com/docker/docker/commit/3ac6394b8082d4700483d52fbfe54914be537d9e"
+ },
+ {
+  "id": "GO-2023-1559",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/ipfs/go-unixfsnode/commit/59050ea8bc458ae55246ae09243e6e165923e076"
+ },
+ {
+  "id": "GO-2026-6228",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/kubev2v/migration-planner/commit/fd21a239216f5eeec635d16c72be9c033bd5d1aa"
+ },
+ {
+  "id": "GO-2026-4724",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/cloudnativelabs/kube-router/commit/a1f0b2eea3ee0f66b9a5b5c49dcb714619ccd456"
+ },
+ {
+  "id": "GO-2025-4146",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/af615ffc24b774d76deef8c93282831432669dd8"
+ },
+ {
+  "id": "GO-2026-5183",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/l3montree-dev/devguard/commit/1be88ec1309a5dc0566e35a23bdc4ea3ecd11417"
+ },
+ {
+  "id": "GO-2023-1927",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: gpgme.h: No such file",
+  "fix_commit": "https://github.com/containers/libpod/pull/3214"
+ },
+ {
+  "id": "GO-2026-4616",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/gogs/gogs/commit/81ee8836445ac888d99da8b652be7d5cbc5c4d5c"
+ },
+ {
+  "id": "GHSA-vc7h-cmp3-4hw5",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/istio/istio/commit/7570a1f5b56c108aed6ecfa5d2a6048f444bfb37"
+ },
+ {
+  "id": "GHSA-877x-32pm-p28x",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "not enough arguments",
+  "fix_commit": "https://github.com/kata-containers/runtime/pull/2713"
+ },
+ {
+  "id": "GO-2026-5437",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/minio/minio/commit/76913a9fd5c6e5c2dbd4e8c7faf56ed9e9e24091"
+ },
+ {
+  "id": "GO-2026-5002",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/fleetdm/fleet/commit/3ff8119ab8f794806a4cc82e21f760c123d92966"
+ },
+ {
+  "id": "GO-2026-5196",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/coder/coder/pull/25286"
+ },
+ {
+  "id": "GO-2024-3279",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/cosmos/cosmos-sdk/commit/c6522a72a45c34897f9fc85d438c0b74d52f8862"
+ },
+ {
+  "id": "GO-2026-5717",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/free5gc/nef/pull/24"
+ },
+ {
+  "id": "GO-2025-3938",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "/var/run/docker.sock",
+  "fix_commit": "https://github.com/coder/coder/commit/06cbb2890f453cd522bb2158a6549afa3419c276"
+ },
+ {
+  "id": "GO-2025-3934",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/e8f86101f5378662ae6151ce5c3a76e9141900e8"
+ },
+ {
+  "id": "GO-2021-0052",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/gin-gonic/gin/commit/03e5e05ae089bc989f1ca41841f05504d29e3fd9"
+ },
+ {
+  "id": "GO-2023-2017",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/weaviate/weaviate/pull/3431"
+ },
+ {
+  "id": "GO-2026-6540",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/lucasdillmann/nginx-ignition/commit/0586b4e55ab780676d3553a2592979dfa2fb0183"
+ },
+ {
+  "id": "GO-2023-2153",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/grpc/grpc-go/commit/f2180b4d5403d2210b30b93098eb7da31c05c721"
+ },
+ {
+  "id": "GO-2024-2877",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/bdd889d43969ba738ddd15e1f674d27964048994"
+ },
+ {
+  "id": "GO-2026-6573",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/kubeedge/kubeedge/commit/14f65fc6207787f266cbcb0dceac7f09a81bab2b"
+ },
+ {
+  "id": "GO-2020-0033",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/go-aah/aah/pull/267"
+ },
+ {
+  "id": "GO-2022-0760",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/evmos/ethermint/commit/144741832007a26dbe950512acbda4ed95b2a451"
+ },
+ {
+  "id": "GO-2025-3944",
+  "verdict": "inconclusive_build",
+  "reason": "our_run_filter_missed",
+  "evidence": "[no tests to run]",
+  "fix_commit": "https://github.com/SpectoLabs/hoverfly/commit/17e60a9bc78826deb4b782dca1c1abd3dbe60d40"
+ },
+ {
+  "id": "GO-2026-6370",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern public/*: no matching files found",
+  "fix_commit": "https://github.com/semaphoreui/semaphore/commit/2d6e2e3eb10e8bf688e2ab59609b909a012fad4c"
+ },
+ {
+  "id": "GO-2026-4407",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/chainguard-dev/melange/commit/6e243d0d46699f837d7c392397a694d2bcc7612b"
+ },
+ {
+  "id": "GO-2025-3480",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/mattermost/mattermost-plugin-boards/commit/025ce8d363a054473bc002f43f602a4032d38c06"
+ },
+ {
+  "id": "GO-2023-1526",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/hakobe/paranoidhttp/commit/07f671da14ce63a80f4e52432b32e8d178d75fd3"
+ },
+ {
+  "id": "GO-2026-6594",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: btrfs/version.h: No such file",
+  "fix_commit": "https://github.com/podman-container-tools/podman/commit/6c431b73dbf8e4b20b778644d7a80caebdb75050"
+ },
+ {
+  "id": "GO-2025-4110",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kubevirt/kubevirt/commit/00d03e43e3bf03e563136695a4732b65ed42d764"
+ },
+ {
+  "id": "GO-2026-5733",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/7b66578adb47bbec839b621a4666495249379174"
+ },
+ {
+  "id": "GO-2026-4350",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/argoproj/argo-workflows/commit/159a5c56285ecd4d3bb0a67aeef4507779a44e17"
+ },
+ {
+  "id": "GO-2022-1180",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/kyverno/kyverno/pull/5713"
+ },
+ {
+  "id": "GO-2024-3181",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: security/pam_appl.h: No such file",
+  "fix_commit": "https://github.com/ubuntu/authd/commit/63e527496b013bed46904c1c58be593c13ebdce5"
+ },
+ {
+  "id": "GO-2026-5698",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/forgekeep/nebula-mesh/commit/b45fda5476c41ffcff1ca23058aef0fb851359c1"
+ },
+ {
+  "id": "GO-2024-2682",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/quic-go/quic-go/commit/4a99b816ae3ab03ae5449d15aac45147c85ed47a"
+ },
+ {
+  "id": "GO-2022-0780",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/influxdata/influxdb/commit/761b557315ff9c1642cf3b0e5797cd3d983a24c0"
+ },
+ {
+  "id": "GO-2022-0490",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/argoproj/argo-events/commit/eaabcb6d65022fc34a0cc9ea7f00681abd326b35"
+ },
+ {
+  "id": "GO-2025-3512",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "kubeconfig",
+  "fix_commit": "https://github.com/kubevirt/csi-driver/commit/cc28dcbb0afca0a7cb8a73bc998ab49f864ed560"
+ },
+ {
+  "id": "GHSA-45gv-9wjv-xh7p",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/95cd21b70814e5d9a48a359aa238aeea1ac97429"
+ },
+ {
+  "id": "GO-2026-5695",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/gogs/gogs/commit/0089c4c8e5b8d99eb6e5c8727f8f40d765f1f58a"
+ },
+ {
+  "id": "GO-2022-0892",
+  "verdict": "fixed_does_not_pass",
+  "reason": "stdlib_too_new_for_old_go",
+  "evidence": "unrecognized import path \"maps\"",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/35a7350b7444bcaf53ee0bb11b9d8e3ae4b717a1"
+ },
+ {
+  "id": "GO-2026-6535",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/hatchet-dev/hatchet/commit/f90464189ad642251e09412d0f99fde353036428"
+ },
+ {
+  "id": "GHSA-662p-52hx-cmh2",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/580585516dd87a8b176bcdac258db70c3b64b7ec"
+ },
+ {
+  "id": "GO-2026-6295",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/GeiserX/genieacs-mcp/commit/577306d78190622eee97e362b042a69499ef373f"
+ },
+ {
+  "id": "GHSA-6xp5-7rcx-xfgx",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/sipcapture/homer/pull/838"
+ },
+ {
+  "id": "GO-2026-4489",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: wtr/watcher-c.h: No such file",
+  "fix_commit": "https://github.com/php/frankenphp/commit/24d6c991a7761b638190eb081deae258143e9735"
+ },
+ {
+  "id": "GO-2025-3660",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/open-policy-agent/opa/commit/ad2063247a14711882f18c387a511fc8094aa79c"
+ },
+ {
+  "id": "GO-2026-5445",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/hashicorp/nomad/commit/cd7240c4099ad33eda279924fb3a9459b162d120"
+ },
+ {
+  "id": "GO-2022-0233",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/pires/go-proxyproto/pull/74"
+ },
+ {
+  "id": "GO-2026-5444",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/dunglas/mercure/commit/4964a69be904fd61e35b5f1e691271663b6fdd64"
+ },
+ {
+  "id": "GO-2026-4567",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/vitessio/vitess/commit/4c0173293907af9cb942a6683c465c3f1e9fdb5c"
+ },
+ {
+  "id": "GO-2026-4714",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/ctfer-io/romeo/commit/3bb5e9d9ce1199dfbb90fef8ad79ebdeb0bc5e78"
+ },
+ {
+  "id": "GO-2025-3942",
+  "verdict": "inconclusive_build",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/coredns/coredns/commit/e1768a5d272e9da649dfb8588595e5c6e4e640bf"
+ },
+ {
+  "id": "GO-2024-3215",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "directory not found",
+  "fix_commit": "https://github.com/grafana/grafana/pull/81666"
+ },
+ {
+  "id": "GO-2026-5838",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/17939826efa20a97f087b3d390ec5136df350bae"
+ },
+ {
+  "id": "GO-2024-2638",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/cosmos/cosmos-sdk/commit/4467110df40797ebe916c23ebfd45c9ee7583897"
+ },
+ {
+  "id": "GO-2022-1135",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/clastix/capsule/commit/1df430e71be8c4778c82eca3459978ad7d0b4b7b"
+ },
+ {
+  "id": "GO-2025-4257",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kedacore/keda/commit/15c5677f65f809b9b6b59a52f4cf793db0a510fd"
+ },
+ {
+  "id": "GO-2022-0442",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-gitea/gitea/pull/19072"
+ },
+ {
+  "id": "GO-2025-4083",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/b284f8474eed0cba531905101619e7ae7963156b"
+ },
+ {
+  "id": "GO-2026-6342",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_prebuilt_binary",
+  "evidence": "Could not find gitea binary",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/bf8d11bb212ba2a76596d8a90e74e7d664571324"
+ },
+ {
+  "id": "GO-2022-0230",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "Expected",
+  "fix_commit": "https://github.com/containernetworking/cni/pull/808"
+ },
+ {
+  "id": "GO-2025-3945",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_prebuilt_binary",
+  "evidence": "Is the binary there",
+  "fix_commit": "https://github.com/SpectoLabs/hoverfly/commit/ffc2cc34563de67fe1a04f7ba5d78fa2d4564424"
+ },
+ {
+  "id": "GO-2022-0937",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "directory not found",
+  "fix_commit": "https://github.com/elves/elvish/commit/ccc2750037bbbfafe9c1b7a78eadd3bd16e81fe5"
+ },
+ {
+  "id": "GO-2023-1866",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/BishopFox/sliver/commit/2d1ea6192cac2ff9d6450b2d96043fdbf8561516"
+ },
+ {
+  "id": "GO-2025-3458",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/drakkan/sftpgo/commit/b347ab6051f6c501da205c09315fe99cd1fa3ba1"
+ },
+ {
+  "id": "GO-2023-1590",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/gopistolet/gopistolet/commit/b91aa4674d460993765884e8463c70e6d886bc90"
+ },
+ {
+  "id": "GO-2026-6491",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/rabbitmq/amqp091-go/commit/fa013b8447eb60988db3c9281ff6b981e4d2fb4f"
+ },
+ {
+  "id": "GO-2025-4076",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/edgelesssys/constellation/commit/bb8d2c8a5c0a0a6510d2cc43055be21f4a3ab83c"
+ },
+ {
+  "id": "GO-2024-3321",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/golang/crypto/commit/b4f1988a35dee11ec3e05d6bf3e90b695fbd8909"
+ },
+ {
+  "id": "GO-2026-6425",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/1ca1c3c9d94bea14fc9728ff2fb8392bb0f29732"
+ },
+ {
+  "id": "GO-2024-3136",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/dragonflyoss/Dragonfly2/commit/e9da69dc4048bf2a18a671be94616d85e3429433"
+ },
+ {
+  "id": "GO-2026-5119",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/nezhahq/nezha/commit/02129f16fb1572ef57c7e8dd7d03f84d39b8b586"
+ },
+ {
+  "id": "GO-2026-4382",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kyverno/kyverno/commit/7a651be3a8c78dcabfbf4178b8d89026bf3b850f"
+ },
+ {
+  "id": "GO-2024-2994",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/kubernetes/kubernetes/commit/23660a78ae462a6c8c75ac7ffd9af97550dda1aa"
+ },
+ {
+  "id": "GHSA-cmv8-6362-r5w9",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/argoproj/argo-workflows/commit/87470e1c2bf703a9110e97bb755614ce8757fdcc"
+ },
+ {
+  "id": "GO-2026-6433",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/d7bc52beeadff4be5f5690de4d5de42abd10affe"
+ },
+ {
+  "id": "GHSA-j3hg-9rp3-5hw9",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/8c9b9a1aff218ee6c980d047b750e49da3c46796"
+ },
+ {
+  "id": "GO-2026-4320",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/getarcaneapp/arcane/commit/5a9c2f92e11f86f8997da8c672844468f930b7e4"
+ },
+ {
+  "id": "GO-2021-0058",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "invalid version",
+  "fix_commit": "https://github.com/crewjam/saml/commit/da4f1a0612c0a8dd0452cf8b3c7a6518f6b4d053"
+ },
+ {
+  "id": "GO-2023-1912",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/multiversx/mx-chain-go/commit/babdb144f1316ab6176bf3dbd7d4621120414d43"
+ },
+ {
+  "id": "GO-2022-0821",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hashicorp/nomad/pull/7023"
+ },
+ {
+  "id": "GO-2024-3010",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/juju/juju/commit/da929676853092a29ddf8d589468cf85ba3efaf2"
+ },
+ {
+  "id": "GO-2025-4168",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/c3f4818afe46a7084740e809708ae22641c76d8d"
+ },
+ {
+  "id": "GO-2026-6657",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/dd2778b70d020b15491ef7418f5f63214583cd63"
+ },
+ {
+  "id": "GO-2026-6377",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/0015cbafbf685363b217bbc46283a3c0f51c79fa"
+ },
+ {
+  "id": "GO-2026-4775",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/smallstep/certificates/commit/e6da031d5125cfd99fe9a26f74bb41e4dacca4ef"
+ },
+ {
+  "id": "GO-2026-5368",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: dqlite.h: No such file",
+  "fix_commit": "https://github.com/canonical/lxd/pull/17909"
+ },
+ {
+  "id": "GO-2026-5906",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "/var/run/docker.sock",
+  "fix_commit": "https://github.com/coder/coder/pull/25709"
+ },
+ {
+  "id": "GO-2026-5596",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/rclone/rclone/commit/9222ed2c5a7678de7fa620214b0858311c707a29"
+ },
+ {
+  "id": "GO-2026-4361",
+  "verdict": "inconclusive_build",
+  "reason": "our_run_filter_missed",
+  "evidence": "[no tests to run]",
+  "fix_commit": "https://github.com/cometbft/cometbft/commit/bf8274fcdbcab2bc652660ae627196a90a6efb97"
+ },
+ {
+  "id": "GO-2026-5284",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/minio/minio/commit/76913a9fd5c6e5c2dbd4e8c7faf56ed9e9e24091"
+ },
+ {
+  "id": "GO-2026-5241",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/fission/fission/pull/3366"
+ },
+ {
+  "id": "GO-2026-4305",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/312269ad0bd166174f07f9df7391fce714601600"
+ },
+ {
+  "id": "GO-2026-4905",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/gotenberg/gotenberg/commit/8625a4e899eb75e6fcf46d28394334c7fd79fff5"
+ },
+ {
+  "id": "GO-2022-0244",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/satori/go.uuid/pull/75"
+ },
+ {
+  "id": "GO-2026-6526",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/stacklok/toolhive/commit/d8f40cb1599b8bf66657f2dfff15bfbfc236e712"
+ },
+ {
+  "id": "GO-2026-4653",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/pocket-id/pocket-id/commit/3a339e33191c31b68bf57db907f800d9de5ffbc8"
+ },
+ {
+  "id": "GO-2026-6055",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/f452c369acc9f1bd05ec6ef9c2e4399062dd6da1"
+ },
+ {
+  "id": "GO-2026-4380",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/amir20/dozzle/commit/620e59aa246347ba8a27e68c532853b8a5137bc1"
+ },
+ {
+  "id": "GO-2026-6503",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/rabbitmq/amqp091-go/commit/2e0a919b89f337dbf58db2bb34ab206dac354a06"
+ },
+ {
+  "id": "GO-2026-4718",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/ctfer-io/chall-manager/commit/dc5ef27dfed2befef7f506ab8ca14d062b0d79c5"
+ },
+ {
+  "id": "GO-2026-6336",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/413074b1e1dc5718b4865b9493d8cc97e1e128de"
+ },
+ {
+  "id": "GO-2025-4077",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/docker/compose/commit/69bcb962bfb2ea53b41aa925333d356b577d6176"
+ },
+ {
+  "id": "GO-2022-1179",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/openfga/openfga/pull/422"
+ },
+ {
+  "id": "GO-2026-5287",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/traefik/traefik/pull/13214"
+ },
+ {
+  "id": "GO-2026-6292",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/sonirico/mcp-shell/commit/f31377fce6ec31114e5a4398c0e5270552bce09f"
+ },
+ {
+  "id": "GO-2026-6141",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/90f310212d3a5075084a603bf61fed549c92956d"
+ },
+ {
+  "id": "GO-2026-5415",
+  "verdict": "inconclusive",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/minio/minio/pull/8200"
+ },
+ {
+  "id": "GO-2026-6076",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/99f8b3d9a1d32f4c39828e07971455a18191e0b9"
+ },
+ {
+  "id": "GO-2026-6308",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/go-vikunja/vikunja/commit/36cdc2ce2be0b8ccc74227d178b92047d59cd65f"
+ },
+ {
+  "id": "GO-2022-1155",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/ipfs/go-merkledag/pull/91"
+ },
+ {
+  "id": "GO-2024-2535",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/rancher/rancher/commit/2f7113dc32d4f1f5375a1ae09b65be58f6801a15"
+ },
+ {
+  "id": "GHSA-7h8m-vrxx-vr4m",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/22e2d5599918864877e054ebe82fb834a5aa1077"
+ },
+ {
+  "id": "GO-2026-4773",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/modelcontextprotocol/go-sdk/commit/a433a831d6e5d5ac3b9e625a8095aa8eaa040dfc"
+ },
+ {
+  "id": "GO-2025-3927",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/rancher/fleet/commit/088bcbea7edb844d7e6fc3649d9954f763cf68a9"
+ },
+ {
+  "id": "GO-2022-1027",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/cloudwego/hertz/pull/229"
+ },
+ {
+  "id": "GO-2023-1971",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/599ff1c054e436daa4dc3f049aa8661d9c2395f9"
+ },
+ {
+  "id": "GO-2025-3511",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/ratify-project/ratify/commit/84c7c48fa76bb9a1c9583635d1e90bc25b1a546c"
+ },
+ {
+  "id": "GO-2026-5546",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/oxia-db/oxia/commit/f7259d0ebc739fc95ff19f93c823433850857416"
+ },
+ {
+  "id": "GO-2026-4486",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: wtr/watcher-c.h: No such file",
+  "fix_commit": "https://github.com/php/frankenphp/commit/04fdc0c1e8fde94e2c1ad86217e962c88d27c53e"
+ },
+ {
+  "id": "GO-2026-6363",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/axllent/mailpit/commit/993bed95b3c74d95231af93bd0e0d4c3d5b4db4d"
+ },
+ {
+  "id": "GO-2022-0380",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/nats-io/jwt/commit/e11ce317263cef69619fc1ca743b195d02aa1d8a"
+ },
+ {
+  "id": "GO-2022-0494",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/zalando/skipper/commit/998a658ce5a68a336a98f4e63e4371e200860dfc"
+ },
+ {
+  "id": "GO-2025-3608",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/argoproj/argo-events/commit/18412293a699f559848b00e6e459c9ce2de0d3e2"
+ },
+ {
+  "id": "GO-2025-4212",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/4c879b47334e01d4fcab921ac1b44eda39acdb96"
+ },
+ {
+  "id": "GO-2026-6632",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/9b8e8956f997d6452d40aff4159d58f3283a98a4"
+ },
+ {
+  "id": "GO-2026-5597",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/go-git/go-billy/pull/205"
+ },
+ {
+  "id": "GO-2026-5523",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/Basekick-Labs/arc/commit/91bdc29d1a02178ccf8c66375eccf85203108dfb"
+ },
+ {
+  "id": "GO-2024-3162",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/openbao/openbao/commit/d5b4e922469830ac335b21dc0e8f9878c501a884"
+ },
+ {
+  "id": "GO-2026-6402",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/1a5b3431d5ab3036b19c1cc79486fedd6906fb57"
+ },
+ {
+  "id": "GO-2022-0261",
+  "verdict": "script_error",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/minio/console/pull/1217"
+ },
+ {
+  "id": "GO-2022-0304",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/78c2084f0febd159039ff785ddc2bd4ba1cecf88"
+ },
+ {
+  "id": "GO-2026-6060",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/1c2d5e9b03f71dd12d450b2af9a79f2557b50226"
+ },
+ {
+  "id": "GHSA-fp37-c92q-4pwq",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/kubernetes/kubernetes/pull/80750"
+ },
+ {
+  "id": "GO-2022-0914",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/opencontainers/runc/commit/0ca91f44f1664da834bc61115a849b56d22f595f"
+ },
+ {
+  "id": "GO-2026-4958",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/moby/spdystream/commit/ef6121f62c730110bf5ae604a865a8613bfb787f"
+ },
+ {
+  "id": "GO-2026-6260",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/vouch/vouch-proxy/commit/fa18ce30ba50a4863a436acad044c22965329c4f"
+ },
+ {
+  "id": "GO-2026-5359",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/grafana/tempo/commit/bb8ca663db34a0980c9758b40d918fda3b4dbec3"
+ },
+ {
+  "id": "GO-2024-3002",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/540e3a57b90eb3655db54793332fac86bcc38b36"
+ },
+ {
+  "id": "GO-2024-2497",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/moby/buildkit/commit/92cc595cfb12891d4b3ae476e067c74250e4b71e"
+ },
+ {
+  "id": "GO-2023-1542",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/pterodactyl/wings/commit/dac9685298c3c1c49b3109fa4241aa88272b9f14"
+ },
+ {
+  "id": "GO-2024-3179",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/pomerium/pomerium/commit/e018cf0fc0979d2abe25ff705db019feb7523444"
+ },
+ {
+  "id": "GO-2023-2115",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/gofiber/fiber/commit/8c3916dbf4ad2ed427d02c6eb63ae8b2fa8f019a"
+ },
+ {
+  "id": "GO-2025-3748",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/pion/interceptor/commit/fa5b35ea867389cec33a9c82fffbd459ca8958e5"
+ },
+ {
+  "id": "GO-2024-2605",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+ },
+ {
+  "id": "GO-2022-0855",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/nats-io/nats-server/commit/2e3c22672936f4980d343fb1d328b38919e74796"
+ },
+ {
+  "id": "GO-2023-2018",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/e047efa8f9518c54d00d2e4493b64bc4dba98478"
+ },
+ {
+  "id": "GO-2026-4548",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/BishopFox/sliver/commit/0cf5a47cfdf94b6ab481ec3ea0db09f31654c0f0"
+ },
+ {
+  "id": "GO-2020-0009",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/square/go-jose/commit/789a4c4bd4c118f7564954f441b29c153ccd6a96"
+ },
+ {
+  "id": "GO-2024-3360",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/openshift/hive/commit/5ba846620f9dbf49301dabb0d40cc980aabef4e0"
+ },
+ {
+  "id": "GO-2021-0110",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/ory/fosite/commit/0c9e0f6d654913ad57c507dd9a36631e1858a3e9"
+ },
+ {
+  "id": "GO-2026-5422",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/chainguard-dev/apko/commit/a118c3d604107532b5525bd4bee2fb369a6228aa"
+ },
+ {
+  "id": "GO-2026-5009",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kopia/kopia/pull/5354"
+ },
+ {
+  "id": "GO-2026-4560",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/fleetdm/fleet/commit/23fc6804efe785f806f769d6be1f5f05b2e13ec2"
+ },
+ {
+  "id": "GO-2025-3805",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/juju/juju/commit/4034aa13c7cf5a37427fcd032925d5d21955b096"
+ },
+ {
+  "id": "GHSA-7774-7vr3-cc8j",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/istio/istio/commit/084b417a486dbe9b9024d4812877016a484572b1"
+ },
+ {
+  "id": "GO-2025-3477",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/oxyno-zeta/s3-proxy/commit/c611c741ed4872ea3f46232be23bb830f96f9564"
+ },
+ {
+  "id": "GO-2026-6095",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/getkin/kin-openapi/commit/f0407d53b0730280266f454b755010e7eeb985da"
+ },
+ {
+  "id": "GO-2026-6563",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/kubeedge/kubeedge/commit/a524a66a1ae1691eb8ff16b6ff9a93fb370d4047"
+ },
+ {
+  "id": "GO-2025-3525",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/expr-lang/expr/commit/0d19441454426d2f58edb22c31f3ba5f99c7a26e"
+ },
+ {
+  "id": "GO-2026-5159",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/filebrowser/filebrowser/commit/0231b7ebdfbe77a6c54027d30c4856c3fd81ee4d"
+ },
+ {
+  "id": "GO-2026-6231",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/kubev2v/assisted-migration-agent/commit/bcae0438ad8386321a300413d71c982a11b7b5b7"
+ },
+ {
+  "id": "GO-2025-4099",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/8dcfff97ed52a8b9fc77ecb1f972744f42cff3ed"
+ },
+ {
+  "id": "GO-2026-4408",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/chainguard-dev/melange/commit/e51ca30cfb63178f5a86997d23d3fff0359fa6c8"
+ },
+ {
+  "id": "GO-2026-4278",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/hashicorp/nomad/commit/d0f4f27dd03e7f9843d7b921ca9f33c257efdfd1"
+ },
+ {
+  "id": "GO-2026-6415",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/426991d155c0c7c3a9e71badd6761eddfa8aad5b"
+ },
+ {
+  "id": "GO-2025-4170",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/acda1fb5dd46a2f46c76ae67012423c760525eaa"
+ },
+ {
+  "id": "GO-2025-4245",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/expr-lang/expr/pull/870"
+ },
+ {
+  "id": "GO-2025-4179",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/docker/mcp-gateway/commit/6b076b2479d8d1345c50c112119c62978d46858e"
+ },
+ {
+  "id": "GHSA-jrfj-fhj2-jjvm",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/qax-os/excelize/pull/2389"
+ },
+ {
+  "id": "GO-2024-2478",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/albertito/chasquid/commit/a996106eeebe81a292ecba838c7503cac7493e74"
+ },
+ {
+  "id": "GO-2022-0774",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/containous/traefik/commit/2b353971696717e980521b0e4baa1eba66c8d2bf"
+ },
+ {
+  "id": "GHSA-c8fj-4pm8-mp2c",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/zitadel/zitadel/pull/4238"
+ },
+ {
+  "id": "GO-2023-2176",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kubernetes-csi/csi-proxy/commit/2523e6674dedf3de27f84235efec28555da24664"
+ },
+ {
+  "id": "GO-2026-5231",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/dexidp/dex/commit/204dbb2e3ff7692af3b7ca4362b1ee46fb43c227"
+ },
+ {
+  "id": "GO-2024-2974",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/evmos/evmos/commit/0a620e176617a835ac697eea494afea09185dfaf"
+ },
+ {
+  "id": "GO-2026-5339",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/open-telemetry/opentelemetry-operator/pull/5104"
+ },
+ {
+  "id": "GO-2026-6379",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/f45749a7ef6e385f6e2af6b7dd12429d56d46f32"
+ },
+ {
+  "id": "GHSA-32gc-wf3m-78w9",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/0ecbd106c37b5143be14880c9447a66135151512"
+ },
+ {
+  "id": "GO-2023-2000",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/libp2p/go-libp2p/commit/0cce607219f3710addc7e18672cffd1f1d912fbb"
+ },
+ {
+  "id": "GO-2026-6353",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/d0f0fe146fb07d594fcadc4f48d4f7c30ac01d1e"
+ },
+ {
+  "id": "GO-2026-4966",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/monetr/monetr/commit/c260caa3c573a4a396ec2d264c7641a5d958385b"
+ },
+ {
+  "id": "GO-2026-4458",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/slackhq/nebula/commit/f573e8a26695278f9d71587390fbfe0d0933aa21"
+ },
+ {
+  "id": "GO-2026-4598",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/nuclio/nuclio/commit/5352d7e16cf92f4350a2f8d806c4b80b626b5c5a"
+ },
+ {
+  "id": "GO-2025-3652",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kyverno/kyverno/commit/3ff923b7756e1681daf73849954bd88516589194"
+ },
+ {
+  "id": "GO-2024-2514",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/hashicorp/vault/commit/f192878110fe93eb13da914b2bee28caa7866a29"
+ },
+ {
+  "id": "GO-2026-6583",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/klever-io/klever-go/commit/a2740c985a788fb69e17742ea4f0c37c440733b2"
+ },
+ {
+  "id": "GO-2026-6232",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/kubev2v/assisted-migration-agent/commit/b940fec9f5032a0801e994054d30e81d64b2942a"
+ },
+ {
+  "id": "GO-2024-3308",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/kolide/launcher/pull/1510"
+ },
+ {
+  "id": "GO-2025-3885",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/external-secrets/external-secrets/commit/de40e8f4fa9559c1d770bb674589b285da5ef2d1"
+ },
+ {
+  "id": "GO-2026-6553",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/openbao/openbao/commit/0f2d90c331f25d1c6cd108638da03f4c7bd949a8"
+ },
+ {
+  "id": "GO-2025-3509",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/go-vela/server/commit/257886e5a3eea518548387885894e239668584f5"
+ },
+ {
+  "id": "GO-2022-0769",
+  "verdict": "inconclusive_build",
+  "reason": "moved_import_path",
+  "evidence": "no matching versions for query",
+  "fix_commit": "https://github.com/binance-chain/tss-lib/commit/7b7c17e90504d5dad94b938e84fec690bb1ec311"
+ },
+ {
+  "id": "GO-2025-4123",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/dvsekhvalnov/jose2go/commit/0a0673dd7f2820a446de5b04b9094b2291d77d5d"
+ },
+ {
+  "id": "GO-2026-6575",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/projectdiscovery/nuclei/commit/1fe6025b966cbb95ed4d9f40abfb629b6cbd27b2"
+ },
+ {
+  "id": "GO-2022-0972",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/shamaton/msgpack/pull/32"
+ },
+ {
+  "id": "GO-2026-6229",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/kubev2v/migration-planner/commit/ec47a336a620f4a995f29c1c53e4e4bd70a26e00"
+ },
+ {
+  "id": "GO-2026-4569",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/modelcontextprotocol/go-sdk/commit/7b8d81c264074404abdf5aa16e2cf0c2d9c64cc0"
+ },
+ {
+  "id": "GO-2025-3553",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/golang-jwt/jwt/commit/0951d184286dece21f73c85673fd308786ffe9c3"
+ },
+ {
+  "id": "GO-2022-1019",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern dist: no matching files found",
+  "fix_commit": "https://github.com/treeverse/lakeFS/commit/81182bf9c0cf57f3cec3c893cf739b2069305e37"
+ },
+ {
+  "id": "GO-2023-1852",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/hashicorp/consul/commit/36ebca1fd0129278487c6570449bc8cc03987890"
+ },
+ {
+  "id": "GO-2022-0497",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/17f7f4f462bdb233e1b9b36f67099f41052d8cb0"
+ },
+ {
+  "id": "GHSA-h24c-6p6p-m3vx",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/threshold-network/tss-lib/commit/2e712689cfbeefede15f95a0ec7112227d86f702"
+ },
+ {
+  "id": "GO-2026-6340",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/2176e84ab977011ff2bc3f3a9066020cc674f6b1"
+ },
+ {
+  "id": "GO-2022-0584",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hashicorp/nomad/commit/1aa46c3796e924b72eb45a7f02dae32df0c1179c"
+ },
+ {
+  "id": "GO-2026-6135",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/bablilayoub/openhole/commit/a28c27adde2a7ed0c347b730c8707208c0f78ed3"
+ },
+ {
+  "id": "GO-2024-2491",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/opencontainers/runc/commit/02120488a4c0fc487d1ed2867e901eeed7ce8ecf"
+ },
+ {
+  "id": "GO-2026-6474",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/e2886a61670ca8fd41c9434f87036546e5620bcc"
+ },
+ {
+  "id": "GO-2022-1031",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/labstack/echo/pull/2260"
+ },
+ {
+  "id": "GO-2026-5870",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/googleapis/mcp-toolbox/commit/c4c7bd917e686de68e2be866cfe3872c3439efae"
+ },
+ {
+  "id": "GO-2021-0099",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/deislabs/oras/commit/96cd90423303f1bb42bd043cb4c36085e6e91e8e"
+ },
+ {
+  "id": "GHSA-4c32-w6c7-77x4",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/megaease/easeprobe/pull/330"
+ },
+ {
+  "id": "GO-2025-4111",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/charmbracelet/soft-serve/commit/bb73b9a0eea0d902da4811420535842a4f9aae3b"
+ },
+ {
+  "id": "GO-2026-6347",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/1eced4a7c099459af42412bb32a83241650c0f8f"
+ },
+ {
+  "id": "GO-2026-5084",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: wtr/watcher-c.h: No such file",
+  "fix_commit": "https://github.com/php/frankenphp/commit/2d0f480329a02571d6f635dad9fdb066e1a11e81"
+ },
+ {
+  "id": "GO-2022-0416",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: gpgme.h: No such file",
+  "fix_commit": "https://github.com/containers/podman/commit/aafa80918a245edcbdaceb1191d749570f1872d0"
+ },
+ {
+  "id": "GHSA-6gcq-wc29-5xf2",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/corazawaf/coraza/commit/814e1898e083d2ff2ceb644382d0da17e930f93f"
+ },
+ {
+  "id": "GO-2024-2903",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/evmos/evmos/commit/478b7a62e7af57a70cf3a01126c7f5a89bee69d7"
+ },
+ {
+  "id": "GHSA-v3p6-34mc-hj7v",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/go-vikunja/vikunja/commit/4ae2e093014881052ed8f8ecd8bcb9adf83dd276"
+ },
+ {
+  "id": "GO-2026-4504",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/jm33-m0/emp3r0r/commit/ea4d074f081dac6293f3aec38f01def5f08d5af5"
+ },
+ {
+  "id": "GO-2026-5616",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/oxyno-zeta/s3-proxy/commit/1320e4abd46ad18c2851fedde50dbb79df8b7a51"
+ },
+ {
+  "id": "GO-2026-4924",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/juju/juju/commit/26ff93c903d55b0712c6fb3f6b254710edb971d4"
+ },
+ {
+  "id": "GO-2026-6316",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/free5gc/nrf/commit/bda0cf75be5556bb4c758c8b34710f3fe6bbe3ea"
+ },
+ {
+  "id": "GO-2026-6495",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/zalando/skipper/commit/2cfceabaa6ff0af65b312dcb9bcbe84691b9d507"
+ },
+ {
+  "id": "GO-2025-4051",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/c976c2881ce5e34febac8a9850a6bad5d728625e"
+ },
+ {
+  "id": "GO-2026-6361",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/seaweedfs/seaweedfs/commit/05ed5c9ae8a2a45101b52b61d02f170d20d587ff"
+ },
+ {
+  "id": "GO-2026-5983",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/aquasecurity/trivy/commit/441251e51ae46cbcf7f436547e0a5766b25328b4"
+ },
+ {
+  "id": "GO-2025-4253",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: pcap.h: No such file",
+  "fix_commit": "https://github.com/elastic/beats/commit/28cfc80d2f4e80bfd1c72eb3f849d777751ab870"
+ },
+ {
+  "id": "GO-2026-6043",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/99f8b3d9a1d32f4c39828e07971455a18191e0b9"
+ },
+ {
+  "id": "GO-2026-6136",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/goshs-labs/goshs/commit/0444ac6b1a8176ddae70d940adf7a26b2e5a6c29"
+ },
+ {
+  "id": "GO-2021-0089",
+  "verdict": "inconclusive",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/buger/jsonparser/pull/192"
+ },
+ {
+  "id": "GO-2026-4463",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/247cd1e51a8c943628dc650e87e794b06aad4c2b"
+ },
+ {
+  "id": "GO-2022-0982",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_env_var",
+  "evidence": "GITEA_ROOT",
+  "fix_commit": "https://github.com/go-gitea/gitea/pull/4840"
+ },
+ {
+  "id": "GO-2025-3450",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/edgelesssys/marblerun/commit/e4864f9f1d0f12a4a7d28514da43bcc75603a5b5"
+ },
+ {
+  "id": "GO-2026-5908",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "/var/run/docker.sock",
+  "fix_commit": "https://github.com/coder/coder/pull/25713"
+ },
+ {
+  "id": "GO-2026-4415",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/AlistGo/alist/commit/b188288525b9a35c76535139311e7c036dab057e"
+ },
+ {
+  "id": "GHSA-5gjm-fj42-x983",
+  "verdict": "inconclusive_build",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/coreos/etcd/commit/a7e5790c82039945639798ae9a3289fe787f5e56"
+ },
+ {
+  "id": "GO-2024-2999",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/woodpecker-ci/woodpecker/commit/764329ed1dbc47c4a517ccc749e3feb34059fac8"
+ },
+ {
+  "id": "GHSA-28xp-g7f6-7mhf",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/syncthing/syncthing/commit/f1f21bf22020d9b881478c2e942ba6943c8da2f3"
+ },
+ {
+  "id": "GO-2026-6081",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/pull/38151"
+ },
+ {
+  "id": "GO-2025-3981",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/gardener/gardener-extension-provider-aws/commit/cb5045fc146248296994804bbfe27bd896938bf2"
+ },
+ {
+  "id": "GO-2026-4314",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/ethereum/go-ethereum/commit/abeb78c647e354ed922726a1d719ac7bc64a07e2"
+ },
+ {
+  "id": "GHSA-7gcp-w6ww-2xv9",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hpcng/singularity/pull/5611"
+ },
+ {
+  "id": "GO-2025-3483",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/mattermost/mattermost-plugin-boards/commit/025ce8d363a054473bc002f43f602a4032d38c06"
+ },
+ {
+  "id": "GHSA-qrqr-3x5j-2xw9",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "Cannot connect to the Docker daemon",
+  "fix_commit": "https://github.com/moby/moby/pull/33182"
+ },
+ {
+  "id": "GO-2026-5923",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/coder/coder/pull/26600"
+ },
+ {
+  "id": "GO-2024-2461",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/gofiber/template/commit/28cff3ac4d4c117ab25b5396954676d624b6cb46"
+ },
+ {
+  "id": "GO-2026-4381",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/kyverno/kyverno/commit/e0ba4de4f1e0ca325066d5095db51aec45b1407b"
+ },
+ {
+  "id": "GO-2023-1772",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/distribution/distribution/commit/f55a6552b006a381d9167e328808565dd2bf77dc"
+ },
+ {
+  "id": "GO-2026-5768",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/0973b074b48816757c47fe732b06d2488d3d284c"
+ },
+ {
+  "id": "GHSA-p393-cf76-4jmr",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/a467ed652591fc0cd1b466a1ec751b493faef9f7"
+ },
+ {
+  "id": "GO-2026-5571",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/opentofu/opentofu/pull/4292"
+ },
+ {
+  "id": "GO-2022-0887",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/go-ldap/ldap/commit/95ede1266b237bf8e9aa5dce0b3250e51bfefe66"
+ },
+ {
+  "id": "GO-2024-3077",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/projectcapsule/capsule/commit/d620b0457ddec01616b8eab8512a10611611f584"
+ },
+ {
+  "id": "GO-2026-6359",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/axllent/mailpit/commit/6bcb6337838b542d53c348e38c7977f569b6db35"
+ },
+ {
+  "id": "GO-2026-4275",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost-plugin-jira/commit/bf9a1b7e81eb83304056b397c6abab3b062e14a2"
+ },
+ {
+  "id": "GO-2022-0346",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/quay/claircore/pull/478"
+ },
+ {
+  "id": "GO-2023-1945",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/hashicorp/consul/commit/90040f8bffb311e6cd8599273e95b607175e311f"
+ },
+ {
+  "id": "GO-2024-2440",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/buildkite/elastic-ci-stack-for-aws/commit/edad0b158ea10a6647bb1c84629d93f5c3d8770e"
+ },
+ {
+  "id": "GO-2026-6335",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/8d26ea93738430a57d00c2da0fd97e1ba712eed7"
+ },
+ {
+  "id": "GO-2026-4315",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/ethereum/go-ethereum/commit/abeb78c647e354ed922726a1d719ac7bc64a07e2"
+ },
+ {
+  "id": "GO-2026-6019",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/zalando/skipper/commit/2cfceabaa6ff0af65b312dcb9bcbe84691b9d507"
+ },
+ {
+  "id": "GO-2022-0348",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/tharsis/evmos/commit/28870258d4ee9f1b8aeef5eba891681f89348f71"
+ },
+ {
+  "id": "GO-2026-4890",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/nektos/act/commit/c28c27e141e8b54f9853de82f421ee09846751f7"
+ },
+ {
+  "id": "GO-2026-6443",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/grpc/grpc-go/pull/9365"
+ },
+ {
+  "id": "GHSA-c85p-xxjj-2r75",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_timeout",
+  "evidence": "signal: killed",
+  "fix_commit": "https://github.com/qax-os/excelize/commit/696050fbf14e74e96a58eef2b16aaf72f381a6a8"
+ },
+ {
+  "id": "GO-2026-6224",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/kubev2v/migration-planner/commit/db4c7857bd8f8e04747a5ea0efca04b0235d6e4a"
+ },
+ {
+  "id": "GO-2023-1577",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/fbb0b99b1ac3361b253052bd30259fa43a520945"
+ },
+ {
+  "id": "GO-2026-4774",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/autobrr/qui/commit/424f7a0de089dce881e8bbecd220163a78e0295f"
+ },
+ {
+  "id": "GO-2025-3490",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/rancher/rancher/pull/49030"
+ },
+ {
+  "id": "GO-2024-2930",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/rancher/rke/commit/cf49199481a1891909acb1384eed73a5c987d5bd"
+ },
+ {
+  "id": "GHSA-7gc4-r5jr-9hxv",
+  "verdict": "script_error",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/flipped-aurora/gin-vue-admin/pull/1264"
+ },
+ {
+  "id": "GO-2026-5337",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/kyverno/kyverno/commit/bbf3e5c01391d612968440659028ae98e565a777"
+ },
+ {
+  "id": "GO-2026-6506",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/coredns/coredns/commit/530b0a5ff2ad68cc0421f10dd93568945cc671c9"
+ },
+ {
+  "id": "GO-2026-4674",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/open-feature/flagd/commit/25c5fd7e80c26eb2c00b20317b2456fe6f927ea3"
+ },
+ {
+  "id": "GO-2025-3941",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/prest/prest/commit/47d02b87842900f77d76fc694d9aa7e983b0711c"
+ },
+ {
+  "id": "GO-2026-5982",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern dist: no matching files found",
+  "fix_commit": "https://github.com/almeidapaulopt/tsdproxy/commit/e8200b7947719e5e7fbbbdb9c34f459a4c285e77"
+ },
+ {
+  "id": "GO-2024-2900",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/open-telemetry/opentelemetry-collector/pull/10289"
+ },
+ {
+  "id": "GO-2024-2729",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/openfga/openfga/commit/b6a6d99b2bdbf8c3781503989576076289f48ed2"
+ },
+ {
+  "id": "GO-2026-6552",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/tinyauthapp/tinyauth/commit/e75605b2c534ec83525a33603e16d76baca13399"
+ },
+ {
+  "id": "GO-2026-4578",
+  "verdict": "inconclusive_build",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find module",
+  "fix_commit": "https://github.com/openshift/openshift-apiserver/pull/591"
+ },
+ {
+  "id": "GHSA-gmph-wf7j-9gcm",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/etcd-io/etcd/pull/15648"
+ },
+ {
+  "id": "GO-2026-5992",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/woodpecker-ci/woodpecker/pull/6792"
+ },
+ {
+  "id": "GO-2026-5946",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/nuclio/nuclio/commit/3356b86a8bfab3f960aa420310ebff765df9dede"
+ },
+ {
+  "id": "GO-2026-6291",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/sonirico/mcp-shell/commit/f31377fce6ec31114e5a4398c0e5270552bce09f"
+ },
+ {
+  "id": "GO-2023-2116",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/gofiber/fiber/commit/8c3916dbf4ad2ed427d02c6eb63ae8b2fa8f019a"
+ },
+ {
+  "id": "GO-2026-6061",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/grpc/grpc-go/commit/4ea465d4ab98013f72a142fe0fc89c19770b2935"
+ },
+ {
+  "id": "GO-2025-3671",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/b1e60e7398d677f08b06fd7715227f70b7ca1162"
+ },
+ {
+  "id": "GO-2024-3267",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/tobychui/zoraxy/commit/2e9bc77a5d832bff1093058d42ce7a61382e4bc6"
+ },
+ {
+  "id": "GO-2026-6374",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/cf42dd5680c8f2d50cebfada5d639c8d59faf50e"
+ },
+ {
+  "id": "GO-2026-4547",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/OliveTin/OliveTin/commit/4bbd2eab153287dc744ad061c58af7693f0c3ddc"
+ },
+ {
+  "id": "GO-2025-3390",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/git-lfs/git-lfs/commit/0345b6f816e611d050c0df67b61f0022916a1c90"
+ },
+ {
+  "id": "GHSA-x6jv-5vfg-gm7x",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/apache/servicecomb-service-center/pull/788"
+ },
+ {
+  "id": "GO-2022-0854",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/openshift/origin/commit/d95ec085f03ecf10e8c424a4f0340ddb38891406"
+ },
+ {
+  "id": "GO-2022-0359",
+  "verdict": "fixed_does_not_pass",
+  "reason": "our_run_filter_missed",
+  "evidence": "[no tests to run]",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/af03b291d4b7e9d3ce9a6580ae9c8141af0e05cf"
+ },
+ {
+  "id": "GHSA-xv7q-fvmc-jx96",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/go-vikunja/vikunja/commit/7854f2729ab72000210b61c25929678fd6901630"
+ },
+ {
+  "id": "GO-2026-5692",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/juju/juju/pull/22205"
+ },
+ {
+  "id": "GHSA-rrm8-32g4-w8m3",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/bitly/oauth2_proxy/pull/360"
+ },
+ {
+  "id": "GO-2024-3349",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/openshift/must-gather-operator/pull/135"
+ },
+ {
+  "id": "GO-2026-4335",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/fleetdm/fleet/commit/e225ef57912c8f4ac8977e24b5ebe1d9fd875257"
+ },
+ {
+  "id": "GO-2023-1504",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "Cannot connect to the Docker daemon",
+  "fix_commit": "https://github.com/nektos/act/commit/63ae215071f94569d910964bdee866d91d6e3a10"
+ },
+ {
+  "id": "GO-2026-4466",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/BishopFox/sliver/commit/2b65089b27c553e79e69f1067cad1339e4f3d937"
+ },
+ {
+  "id": "GO-2024-2987",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/skupperproject/skupper/commit/d2cb3782e807853694ee66b6e3d4a1917485eb71"
+ },
+ {
+  "id": "GO-2024-2831",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: post.h: No such file",
+  "fix_commit": "https://github.com/spacemeshos/go-spacemesh/commit/9aff88d54be809ac43d60e8a8b4d65359c356b87"
+ },
+ {
+  "id": "GO-2025-3533",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/getkin/kin-openapi/commit/67f0b233ffc01332f7d993f79490fbea5f4455f1"
+ },
+ {
+  "id": "GHSA-h246-wpgf-vmq5",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/a3999bd78a3b97ab22e6b5e9fd478ac57598a954"
+ },
+ {
+  "id": "GO-2026-5109",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/free5gc/smf/commit/e0974e07ddab44a67d36a563cca383b2449e33e5"
+ },
+ {
+  "id": "GO-2026-6103",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/fatedier/frp/commit/7dc7be930e2452ae93fd32f2a77f8c6fcd0b652b"
+ },
+ {
+  "id": "GO-2026-6004",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "[no test files]",
+  "fix_commit": "https://github.com/nuclio/nuclio/commit/4c78040c759068e927f3ed7c6507543c15d4ae56"
+ },
+ {
+  "id": "GO-2022-0322",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/prometheus/client_golang/pull/962"
+ },
+ {
+  "id": "GO-2026-6490",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/centrifugal/centrifugo/commit/84d38cea1dd2efa24375a148817a974c8727f4b0"
+ },
+ {
+  "id": "GO-2025-3721",
+  "verdict": "fixed_does_not_pass",
+  "reason": "moved_import_path",
+  "evidence": "no matching versions for query",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/c097887bc5f680e12c998580fb56d98a15758f53"
+ },
+ {
+  "id": "GO-2022-0295",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "directory not found",
+  "fix_commit": "https://github.com/authzed/spicedb/commit/15bba2e2d2a4bda336a37a7fe8ef8a35028cd970"
+ },
+ {
+  "id": "GO-2024-3082",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/CosmWasm/wasmd/commit/71cf6a8145426b82ed6249ecc86ddd281af9f97b"
+ },
+ {
+  "id": "GO-2025-3529",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/openshift/hive/pull/2612"
+ },
+ {
+  "id": "GO-2022-0631",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kiali/kiali/commit/faed1f5f90efae3df9fd6fb793f00ccc242b3a96"
+ },
+ {
+  "id": "GO-2025-4261",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_env_var",
+  "evidence": "GITEA_ROOT",
+  "fix_commit": "https://github.com/go-gitea/gitea/pull/32151"
+ },
+ {
+  "id": "GO-2026-5837",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/dgraph-io/dgraph/commit/cee702c93f141eeb0c96a81f70830ec9e459efac"
+ },
+ {
+  "id": "GHSA-p8v3-89rh-jxc7",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/a467ed652591fc0cd1b466a1ec751b493faef9f7"
+ },
+ {
+  "id": "GO-2026-6114",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/etcd-io/etcd/commit/6643f80602461a6095c9b294b6512fd9719bef41"
+ },
+ {
+  "id": "GO-2026-6334",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/76c539cd572f1638c5a8a6571b0c347b277bf999"
+ },
+ {
+  "id": "GO-2021-0102",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/cloudfoundry/gorouter/commit/b1b5c44e050f73b399b379ca63a42a2c5780a83f"
+ },
+ {
+  "id": "GO-2026-6290",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/sonirico/mcp-shell/commit/f31377fce6ec31114e5a4398c0e5270552bce09f"
+ },
+ {
+  "id": "GO-2026-6227",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/authorizerdev/authorizer/commit/66fe488fd2a4e7acf1e517334344d5e8f3ddd296"
+ },
+ {
+  "id": "GO-2026-5586",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/forgekeep/nebula-mesh/commit/8baaace54c2a23e7c351b3efab5a31ab07b125dc"
+ },
+ {
+  "id": "GO-2024-3057",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/netbirdio/netbird/commit/cf6210a6f42355e88c422c624376f6fcdaea6729"
+ },
+ {
+  "id": "GO-2023-2133",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/nats-io/nats-server/pull/4605"
+ },
+ {
+  "id": "GO-2026-5771",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/modelcontextprotocol/go-sdk/commit/67bd3f2e2b53ce11a16db8d976cdb8ff1e986b6d"
+ },
+ {
+  "id": "GO-2024-3104",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern build/linux/*/*/bin/*: no matching files found",
+  "fix_commit": "https://github.com/ollama/ollama/commit/123a722a6f541e300bc8e34297ac378ebe23f527"
+ },
+ {
+  "id": "GO-2022-0889",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/cosmos/ethermint/pull/692"
+ },
+ {
+  "id": "GO-2020-0017",
+  "verdict": "inconclusive_build",
+  "reason": "old_mod_flag",
+  "evidence": "-mod=mod not supported",
+  "fix_commit": "https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab"
+ },
+ {
+  "id": "GHSA-557g-r22w-9wvx",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/sylabs/singularity/commit/618c9d56802399adb329c23ea2b70598eaff4a31"
+ },
+ {
+  "id": "GO-2026-6465",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/traefik/traefik/commit/58d1e9ca204526823211e30fd4634101c59d58e9"
+ },
+ {
+  "id": "GO-2024-2958",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/gorilla/schema/commit/cd59f2f12cbdfa9c06aa63e425d1fe4a806967ff"
+ },
+ {
+  "id": "GO-2026-6333",
+  "verdict": "fixed_does_not_pass",
+  "reason": "old_mod_flag",
+  "evidence": "flag provided but not defined",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/57b5ed3f252753797e790c060c42fbbe8219b9c1"
+ },
+ {
+  "id": "GO-2025-3923",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/rancher/rancher/commit/aee95d4e2a41ba2df6f88c9634d4fe1f42dee4d9"
+ },
+ {
+  "id": "GHSA-6g5f-f5pm-mjrg",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/istio/istio/commit/91faba277439dab798185730d1624bd53e37bb06"
+ },
+ {
+  "id": "GO-2022-0963",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/gagliardetto/binary/pull/7"
+ },
+ {
+  "id": "GO-2026-5775",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-chi/chi/pull/967"
+ },
+ {
+  "id": "GO-2025-4087",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/Consensys/gnark-crypto/commit/2e7bf9190a0aac896eeec3876c87c77a35661be7"
+ },
+ {
+  "id": "GO-2023-1377",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/weaveworks/weave-gitops/commit/75268c4d2c8f7e4db22c63d76b451ba6545d117f"
+ },
+ {
+  "id": "GO-2022-0583",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/gogs/gogs/commit/7885f454a4946c4bbec1b4f8c603b5eea7429c7f"
+ },
+ {
+  "id": "GO-2024-2476",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/dexidp/dex/commit/5bbdb4420254ba73b9c4df4775fe7bdacf233b17"
+ },
+ {
+  "id": "GO-2022-0562",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/gogs/gogs/commit/9bf748b6c4c9a17d3aa77f6b9abcfae65451febf"
+ },
+ {
+  "id": "GO-2026-4449",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/gogs/gogs/commit/d568e048315dc9729c8518d8085cab7dbbfac80f"
+ },
+ {
+  "id": "GO-2026-6407",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/siyuan-note/siyuan/commit/82e9ded423e45eabcc96010abd30c0f96bfe0323"
+ },
+ {
+  "id": "GO-2026-4303",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/eaa598aba901a20c65c52dd1e1b82e7e1dffb962"
+ },
+ {
+  "id": "GO-2026-5924",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "/var/run/docker.sock",
+  "fix_commit": "https://github.com/coder/coder/pull/26146"
+ },
+ {
+  "id": "GO-2024-2858",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/grafana/grafana/commit/c658816f5229d17f877579250c07799d3bbaebc9"
+ },
+ {
+  "id": "GO-2024-2756",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "kubeconfig",
+  "fix_commit": "https://github.com/kubevirt/kubevirt/pull/3686"
+ },
+ {
+  "id": "GO-2026-5836",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost-plugin-github/commit/9b41b1fd43c408f4be53026ee337bbeaa74ad47c"
+ },
+ {
+  "id": "GO-2022-0945",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/square/go-jose/pull/111"
+ },
+ {
+  "id": "GO-2023-1630",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/foxcpp/maddy/commit/9f58cb64b39cdc01928ec463bdb198c4c2313a9c"
+ },
+ {
+  "id": "GO-2026-4988",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/l3montree-dev/devguard/commit/6f38310bf93b2a63df3055038f4da82b1f4e6d9a"
+ },
+ {
+  "id": "GO-2021-0060",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/russellhaering/gosaml2/commit/42606dafba60c58c458f14f75c4c230459672ab9"
+ },
+ {
+  "id": "GO-2026-6312",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/kubevela/kubevela/commit/f6a64398b5e0065c57c3a0fb6765dd3dc48c749d"
+ },
+ {
+  "id": "GO-2024-2453",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/cloudflare/circl/commit/75ef91e8a2f438e6ce2b6e620d236add8be1887d"
+ },
+ {
+  "id": "GO-2024-3243",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hashicorp/consul/commit/d9206fc7e284a9244af4d62f8653a63ca30bd00c"
+ },
+ {
+  "id": "GO-2026-5094",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/distribution/distribution/commit/cc5d5fa4ba02157501e6afa2cc6a903ad0338e7b"
+ },
+ {
+  "id": "GO-2024-2485",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "/var/run/docker.sock",
+  "fix_commit": "https://github.com/hashicorp/vault/commit/18485ee9d4352ac8e8396c580b5941ccf8e5b31a"
+ },
+ {
+  "id": "GO-2022-0498",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/argoproj/argo-cd/commit/8bc3ef690de29c68a36f473908774346a44d4038"
+ },
+ {
+  "id": "GO-2025-4041",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/cosmos/evm/commit/79089feebe79ce1f35250ba457cbd436e6bfff8b"
+ },
+ {
+  "id": "GO-2026-5452",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/MontFerret/ferret/commit/160ebad6bd50f153453e120f6d909f5b83322917"
+ },
+ {
+  "id": "GO-2026-6221",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/seaweedfs/seaweedfs/commit/dd1b4287899eed3dfd73c2f3b1de001996fda229"
+ },
+ {
+  "id": "GO-2026-5533",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/tilt-dev/tilt/pull/6776"
+ },
+ {
+  "id": "GO-2025-4032",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/2096f975b2c0ebe95fb1078c3b1a527da574796d"
+ },
+ {
+  "id": "GO-2025-3735",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/quic-go/quic-go/commit/b90058aba5f65f48e0e150c89bbaa21a72dda4de"
+ },
+ {
+  "id": "GO-2024-3246",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hashicorp/vault/commit/195dfca433028887973f5bd82d173d91fe9dab4a"
+ },
+ {
+  "id": "GO-2021-0095",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/google/go-tpm/pull/195"
+ },
+ {
+  "id": "GO-2024-3135",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "Cannot connect to the Docker daemon",
+  "fix_commit": "https://github.com/traefik/traefik/commit/584144100524277829f26219baaab29a53b8134f"
+ },
+ {
+  "id": "GO-2026-5777",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/go-chi/chi/pull/967"
+ },
+ {
+  "id": "GO-2022-0840",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "/var/run/docker.sock",
+  "fix_commit": "https://github.com/hashicorp/nomad/pull/7022"
+ },
+ {
+  "id": "GO-2022-0593",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/hashicorp/consul/commit/3357e57dac9aadabd476f7a14973e47f003c4cf0"
+ },
+ {
+  "id": "GO-2026-6324",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/portainer/portainer/commit/49f19107cf9a3540cbe406c9eb7f24390e1af02b"
+ },
+ {
+  "id": "GO-2026-6044",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/699fe2ef43b9466ac1b0cb857029f91fd5b0056d"
+ },
+ {
+  "id": "GO-2023-1962",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: gpgme.h: No such file",
+  "fix_commit": "https://github.com/projectatomic/libpod/commit/bae80a0b663925ec751ad2784ca32989403cdc24"
+ },
+ {
+  "id": "GO-2026-6502",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/rabbitmq/amqp091-go/commit/3b879e1d1d25b544e26b3bc3d7db3213203c0f3b"
+ },
+ {
+  "id": "GO-2025-3817",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "no required module provides",
+  "fix_commit": "https://github.com/grafana/grafana/commit/0ba0b99665a946cd96676ef85ec8bc83028cb1d7"
+ },
+ {
+  "id": "GHSA-6r69-c6wg-7g8m",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/jhaals/yopass/commit/61e31ead04a4fc27ce80bed226af41c7c0426ccf"
+ },
+ {
+  "id": "GO-2025-3858",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/openbao/openbao/commit/a14053c9679d6e9cf370f00cf933476cda6d84a2"
+ },
+ {
+  "id": "GO-2026-4572",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/0261536243e500dccfd8c7f547d592c822478327"
+ },
+ {
+  "id": "GO-2021-0083",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/hybridgroup/gobot/commit/c1aa4f867846da4669ecf3bc3318bd96b7ee6f3f"
+ },
+ {
+  "id": "GO-2025-3958",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/13cd76009d31754db46115bddef5287a8a29871a"
+ },
+ {
+  "id": "GHSA-6xf3-5hp7-xqqg",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/gravitational/teleport/pull/14726"
+ },
+ {
+  "id": "GO-2025-3895",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/hydraide/hydraide/commit/b252554a811400a81951dc9f959b99077f187975"
+ },
+ {
+  "id": "GO-2025-3893",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "envtest",
+  "fix_commit": "https://github.com/projectcapsule/capsule/commit/e1f47feade6e1695b2204407607d07c3b3994f6e"
+ },
+ {
+  "id": "GO-2023-1388",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/weaveworks/weave-gitops/commit/ce2bbff0a3609c33396050ed544a5a21f8d0797f"
+ },
+ {
+  "id": "GO-2023-1699",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/moby/moby/pull/45118"
+ },
+ {
+  "id": "GO-2022-1002",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/pandatix/go-cvss/commit/d9d478ff0c13b8b09ace030db9262f3c2fe031f4"
+ },
+ {
+  "id": "GO-2023-1295",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/square/squalor/commit/033350b8596b397c6cefa066b1f2c83d35fc8c4a"
+ },
+ {
+  "id": "GO-2022-0922",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/projectcontour/contour/commit/b53a5c4fd927f4ea2c6cf02f1359d8e28bef852e"
+ },
+ {
+  "id": "GO-2026-6160",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/bank-vaults/vault-secrets-webhook/commit/76db45976fee0f54cafd94dffa425e6b542f65a0"
+ },
+ {
+  "id": "GO-2026-6518",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/perses/perses/commit/8015fb340bdc625953e73a7a688be5b939159540"
+ },
+ {
+  "id": "GO-2026-4952",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/go-vikunja/vikunja/commit/c03d682f48aff890eeb3c8b41d38226069722827"
+ },
+ {
+  "id": "GO-2026-6146",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/OliveTin/OliveTin/commit/ec114e95d297b806c3ca0c37bc139b3c9c517b3f"
+ },
+ {
+  "id": "GO-2024-2608",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/stacklok/minder/commit/45750b4e9fb2de33365758366e06c19e999bd2eb"
+ },
+ {
+  "id": "GO-2026-6348",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/grpc/grpc-go/commit/7354d9c8debb4bcf2225bf429857078de310c176"
+ },
+ {
+  "id": "GHSA-x2q3-8cjh-766f",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/qax-os/excelize/commit/5f636f9dcde55911f14290060b017f0cc88cd694"
+ },
+ {
+  "id": "GO-2026-5499",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/nuclio/nuclio/commit/1915cd26d514dcdd487517d4be56673fc02298e0"
+ },
+ {
+  "id": "GHSA-7fxj-fr3v-r9gj",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/pingcap/tidb/commit/d0376379d615cc8f263a0b17c031ce403c8dcbfb"
+ },
+ {
+  "id": "GO-2024-3184",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/AdguardTeam/AdGuardHome/commit/e8fd4b187287a562cbe9018999e5ea576b4c7d68"
+ },
+ {
+  "id": "GO-2024-2683",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/hashicorp/consul/commit/2c881259ce10e308ff03afc968c4165998fd7fee"
+ },
+ {
+  "id": "GO-2022-0647",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/docker/docker/commit/d5ebb60bddbabea0439213501f4f6ed494b23cba"
+ },
+ {
+  "id": "GO-2022-0759",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/sigstore/policy-controller/commit/e852af36fb7d42678b21d7e97503c25bd1fd05c8"
+ },
+ {
+  "id": "GO-2026-6351",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "too many arguments in call",
+  "fix_commit": "https://github.com/seaweedfs/seaweedfs/commit/5e8f99f40a8abc7b449aefd260516443377041c7"
+ },
+ {
+  "id": "GO-2026-6024",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/filebrowser/filebrowser/commit/883a36f02fcb69566a8628cb47f18fdc73348387"
+ },
+ {
+  "id": "GO-2025-4054",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/bac25154d659883c801b3bb9a0687f46570f5bbf"
+ },
+ {
+  "id": "GO-2024-3153",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/navidrome/navidrome/commit/3107170afd9f557a10f7031f23cb3c9e975a71f9"
+ },
+ {
+  "id": "GO-2025-4112",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/evervault/evervault-go/commit/7c824d289bba11ec0bea46a338023f5b128bbb28"
+ },
+ {
+  "id": "GO-2026-4279",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/open-feature/flagd/pull/1840"
+ },
+ {
+  "id": "GO-2025-3594",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/minio/minio/commit/8c70975283f9f4ce80f331a25c7475a36279e519"
+ },
+ {
+  "id": "GHSA-33rr-wq23-g6gg",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/0xJacky/nginx-ui/commit/a3999bd78a3b97ab22e6b5e9fd478ac57598a954"
+ },
+ {
+  "id": "GO-2022-1184",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/sajari/docconv/pull/110"
+ },
+ {
+  "id": "GO-2024-2821",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/stacklok/minder/commit/3e5a527d2f1b535159206161d1d519602c75bd0d"
+ },
+ {
+  "id": "GO-2024-3189",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/btcsuite/btcd/commit/04469e600e7d4a58881e2e5447d19024e49800f5"
+ },
+ {
+  "id": "GO-2025-4213",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/4c879b47334e01d4fcab921ac1b44eda39acdb96"
+ },
+ {
+  "id": "GO-2026-6211",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/traefik/traefik/commit/108a5264473a2cbc8f12d6d691a3c6553cdf2c1b"
+ },
+ {
+  "id": "GHSA-g622-r636-qfqh",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/couchbase/sync_gateway/commit/97adb5b496aa96aa70398018ea96da913ffd8d8c"
+ },
+ {
+  "id": "GO-2026-6541",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/grafana/grafana/commit/82ef13993059351bf21de35b8488bbd9b42df4f4"
+ },
+ {
+  "id": "GO-2025-4210",
+  "verdict": "fixed_does_not_pass",
+  "reason": "build_tag_excludes",
+  "evidence": "build constraints exclude all Go files",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/4c879b47334e01d4fcab921ac1b44eda39acdb96"
+ },
+ {
+  "id": "GO-2026-4942",
+  "verdict": "inconclusive_build",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find module",
+  "fix_commit": "https://github.com/distribution/distribution/commit/078b0783f239b4115d1a979e66f08832084e9d1d"
+ },
+ {
+  "id": "GO-2026-5181",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/tilt-dev/tilt/pull/6776"
+ },
+ {
+  "id": "GO-2022-0912",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n\n--- FAIL",
+  "fix_commit": "https://github.com/sylabs/sif/commit/193962882122abf85ff5f5bcc86404933e71c07d"
+ },
+ {
+  "id": "GO-2026-6523",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/frain-dev/convoy/commit/1cc67cd16fb1f8890cc83a3998d3f92dceb7fd06"
+ },
+ {
+  "id": "GO-2022-1065",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/go-gitea/gitea/pull/21463"
+ },
+ {
+  "id": "GO-2025-3364",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/karmada-io/karmada/commit/2c82055c4c7f469411b1ba48c4dba4841df04831"
+ },
+ {
+  "id": "GO-2026-5991",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/forgekeep/nebula-mesh/commit/7cb01bab281ded557f8b6c81dab5f48d4c10182e"
+ },
+ {
+  "id": "GO-2026-6557",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_docker_or_cluster",
+  "evidence": "etcd",
+  "fix_commit": "https://github.com/kubeedge/kubeedge/commit/552af457a4c7ce80ea1678ab5889f475b36ea103"
+ },
+ {
+  "id": "GO-2026-5737",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/authorizerdev/authorizer/commit/6d9bef1aaba3f867f8c769b93eb7fc80e4e7b0a2"
+ },
+ {
+  "id": "GO-2022-1086",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/zalando/skipper/pull/2058"
+ },
+ {
+  "id": "GHSA-fwv2-65wh-2w8c",
+  "verdict": "fixed_does_not_pass",
+  "reason": "panic_runtime",
+  "evidence": "panic: ",
+  "fix_commit": "https://github.com/snowflakedb/gosnowflake/commit/e11a2a555f1b9f7adc1f01fb7b5e7f38fbbb2a1c"
+ },
+ {
+  "id": "GO-2024-3056",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/go-gitea/gitea/commit/b6280f4d21309cfae7cc07f74173354c664d5e10"
+ },
+ {
+  "id": "GO-2022-0588",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/microcosm-cc/bluemonday/commit/c788a2a4d42e081ad54a31368478820bb4a42fb4"
+ },
+ {
+  "id": "GO-2025-4085",
+  "verdict": "fixed_does_not_pass",
+  "reason": "moved_import_path",
+  "evidence": "no matching versions for query",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/b8db8cdf9cc8ea13f461758aef12457f8b7d972a"
+ },
+ {
+  "id": "GO-2026-5157",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/hjson/hjson-go/commit/326599cebc6ef759892f473bf1439b98466a99fa"
+ },
+ {
+  "id": "GO-2025-3833",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/oauth2-proxy/oauth2-proxy/commit/9ffafad4b2d2f9f7668e5504565f356a7c047b77"
+ },
+ {
+  "id": "GO-2024-2649",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/go-vela/types/commit/2e046fceb8fe56fb7170495962f24475cee78d46"
+ },
+ {
+  "id": "GO-2022-0804",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/hashicorp/vault-plugin-secrets-gcp/commit/e43d20870c50f7428dead1411debcec075b35fb4"
+ },
+ {
+  "id": "GO-2026-4356",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/dragonflyoss/dragonfly/commit/9fb9a2dfde3100f32dc7f48eabee4c2b64eac55f"
+ },
+ {
+  "id": "GO-2025-4084",
+  "verdict": "fixed_does_not_pass",
+  "reason": "moved_import_path",
+  "evidence": "no matching versions for query",
+  "fix_commit": "https://github.com/zitadel/zitadel/commit/72a5c33e6ac302b978d564bd049f9364f5a989b1"
+ },
+ {
+  "id": "GO-2024-2602",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/coder/coder/commit/1171ce7add017481d28441575024209ac160ecb0"
+ },
+ {
+  "id": "GO-2024-2648",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/go-vela/server/commit/a645c822da1d91e1f4159b69685224232683bebb"
+ },
+ {
+  "id": "GO-2026-6280",
+  "verdict": "fixed_does_not_pass",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/1ce2484a00c9821ee19708d2c46720e4855033a9"
+ },
+ {
+  "id": "GO-2025-4152",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/hashicorp/terraform-provider-vault/commit/882bc7f409acc99c872c345edd65159d9568589a"
+ },
+ {
+  "id": "GO-2022-0956",
+  "verdict": "inconclusive",
+  "reason": "old_mod_flag",
+  "evidence": "-mod=mod not supported",
+  "fix_commit": "https://github.com/go-yaml/yaml/commit/f221b8435cfb71e54062f6c6e99e9ade30b124d5"
+ },
+ {
+  "id": "GO-2022-1129",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/crewjam/saml/commit/aee3fb1edeeaf1088fcb458727e0fd863d277f8b"
+ },
+ {
+  "id": "GO-2024-2574",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/gofiber/fiber/commit/f0cd3b44b086544a37886232d0530601f2406c23"
+ },
+ {
+  "id": "GO-2026-5710",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/prometheus/prometheus/pull/18587"
+ },
+ {
+  "id": "GO-2026-4327",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/zalando/skipper/commit/0b52894570773b29e2f3c571b94b4211ef8fa714"
+ },
+ {
+  "id": "GO-2026-5687",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/nezhahq/nezha/commit/d06d539d34c143d842b91e2a64326e8c8f9bc405"
+ },
+ {
+  "id": "GO-2023-1589",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/notaryproject/notation-go/pull/275"
+ },
+ {
+  "id": "GO-2025-3656",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/volcano-sh/volcano/commit/45a4347471a5254121d10afef04c6732095fa398"
+ },
+ {
+  "id": "GO-2026-4967",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern all:dist: no matching files found",
+  "fix_commit": "https://github.com/orneryd/NornicDB/commit/adce4f9a9fc7b6aada07c0bfa2d737cd7a6efaca"
+ },
+ {
+  "id": "GO-2026-4848",
+  "verdict": "fixed_does_not_pass",
+  "reason": "embedded_asset_missing",
+  "evidence": "pattern dist: no matching files found",
+  "fix_commit": "https://github.com/go-vikunja/vikunja/commit/9efe1fadba817923c7c7f5953c3e9e9c5683bbf3"
+ },
+ {
+  "id": "GO-2026-4477",
+  "verdict": "fixed_does_not_pass",
+  "reason": "needs_db_or_port",
+  "evidence": "dial tcp",
+  "fix_commit": "https://github.com/mattermost/mattermost/commit/259ad46f30d0fac2f7c5c14f3b76b2170f7e90c7"
+ },
+ {
+  "id": "GO-2026-6507",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/coredns/coredns/commit/530b0a5ff2ad68cc0421f10dd93568945cc671c9"
+ },
+ {
+  "id": "GO-2025-3686",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "has no field or method",
+  "fix_commit": "https://github.com/babylonlabs-io/babylon/commit/cb5d0ecae5cebc116d09296baaed25f715f904df"
+ },
+ {
+  "id": "GO-2026-4799",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_timeout",
+  "evidence": "signal: killed",
+  "fix_commit": "https://github.com/ory/oathkeeper/commit/198a2bc82a99e0a77bd0ffe290cbdd5285a1b17c"
+ },
+ {
+  "id": "GO-2022-0480",
+  "verdict": "fixed_does_not_pass",
+  "reason": "missing_C_headers",
+  "evidence": "fatal error: gpgme.h: No such file",
+  "fix_commit": "https://github.com/cri-o/cri-o/commit/f032cf649ecc7e0c46718bd9e7814bfb317cb544"
+ },
+ {
+  "id": "GO-2024-2501",
+  "verdict": "fixed_does_not_pass",
+  "reason": "dependency_unresolved",
+  "evidence": "cannot find package",
+  "fix_commit": "https://github.com/hashicorp/consul/pull/9024"
+ },
+ {
+  "id": "GO-2026-4353",
+  "verdict": "fixed_does_not_pass",
+  "reason": "assertion_failed",
+  "evidence": "\n--- FAIL",
+  "fix_commit": "https://github.com/charmbracelet/soft-serve/commit/8539f9ad39918b67d612a35785a2b4326efc8741"
+ },
+ {
+  "id": "GO-2024-2842",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/containers/image/commit/132678b47bae29c710589012668cb85859d88385"
+ },
+ {
+  "id": "GO-2026-6428",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/openchoreo/openchoreo/commit/50fcae3f1753fd0ac3ae655a3fc080a761c49c04"
+ },
+ {
+  "id": "GO-2026-6527",
+  "verdict": "not_reproduced",
+  "reason": "test_passes_on_old_code",
+  "evidence": "",
+  "fix_commit": "https://github.com/project-zot/zot/commit/7bb211bcd4352b90f3e99752607fbd1f050bf7ca"
+ },
+ {
+  "id": "GO-2025-4114",
+  "verdict": "fixed_does_not_pass",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/milvus-io/milvus/pull/45383"
+ },
+ {
+  "id": "GO-2026-4584",
+  "verdict": "fixed_does_not_pass",
+  "reason": "test_file_absent",
+  "evidence": "directory not found",
+  "fix_commit": "https://github.com/OliveTin/OliveTin/commit/2eb5f0ba79d4bbef3c802bf8b4666a7e18dcfd90"
+ },
+ {
+  "id": "GO-2025-4113",
+  "verdict": "inconclusive_build",
+  "reason": "unclassified",
+  "evidence": "",
+  "fix_commit": "https://github.com/oauth2-proxy/oauth2-proxy/commit/f3f30fa976fb4bb97d6345ba4735cb6d86e24f95"
+ },
+ {
+  "id": "GO-2025-4039",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/openbao/openbao/commit/d418f238bc99adc72c73109faf574cc2b672880c"
+ },
+ {
+  "id": "GO-2026-6453",
+  "verdict": "inconclusive_build",
+  "reason": "symbol_from_fix_missing",
+  "evidence": "undefined: ",
+  "fix_commit": "https://github.com/qax-os/excelize/commit/93f0b3caed37f21ef5079e3259c6c21dcfe68453"
+ }
+]
