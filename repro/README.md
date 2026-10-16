@@ -1,53 +1,55 @@
-# repro — proving a fix is real by running its own test
+# repro — collecting test signals from candidate Go fixes
 
-`osv-resolver` finds the commit that fixed an advisory. This folder answers the
-next question: **was the bug real, and did that commit actually fix it?**
+`osv-resolver` selects a **candidate** fix commit from an advisory's references.
+This folder asks whether changed maintainer tests behave differently on that
+commit and its parent. The direct path runs tests on the candidate commit, then
+on its parent with the changed test files carried over.
 
-The method needs no AI and no exploit. A security fix usually ships with a test.
-Run that test two ways:
-
-- on the **fixed** commit — it should pass,
-- on the **parent** commit with the fix's test files laid on top — it should fail.
-
-Fail-before, pass-after means the bug was real and this commit is the fix. A
-crash, a failed assertion, or a timeout all count as "fail". Nothing is sent to
-any live system; the test calls the library in a throwaway container.
+An aggregate fail-before/pass-after run is a **lead**, not proof that the named
+security test failed or that the advisory's specific bug was reproduced. A
+confirmed advisory-level result requires the same named test to execute, fail
+for the expected reason before the fix, pass after it, and match the advisory.
+None of these tests establishes deployed reachability or exploitability.
 
 ## What was run
 
-Every critical/high Go advisory in OSV that has a GitHub fix — **1,525** of them
-(out of 5,074 unique Go advisories). One rented 16-core server, about a day,
-roughly $9. Each advisory is cloned, built with the Go version that was current
-on the fix date, and tested twice.
+The study selected **1,525** alias-deduplicated Go advisory groups labelled high
+or critical and containing a GitHub commit or pull-request reference, or a
+GitHub Git range. Those links are candidate fix references, not confirmed fixes.
+This selected cohort is not all Go vulnerabilities, and the counts below are
+not a reproduction rate or an estimate of method sensitivity. The OSV snapshot
+and full merge provenance still need to be frozen for independent audit.
 
 ## Result
 
-| Outcome | Count |
-|---|---|
-| **Proven** (fail-before, pass-after) | **364** |
-| Fix shipped no test | 630 |
-| Not proven, had a test (see `results/failure_reasons.json`) | 510 |
-| No fix commit found / other | 21 |
+| Observed workflow outcome | Advisory rows |
+|---|---:|
+| No changed Go test detected in the selected candidate fix | 630 |
+| Excluded before the test path | 24 |
+| Entered the test path | 871 |
+| Direct-method pipeline flags within the test path | 364 |
+| Archived direct-method aggregate old-fail/fixed-pass transitions | 338 |
 
-Of the 871 advisories whose fix shipped a test, 364 (42%) are proven. A hand
-check of 30 proven cases (`handcheck-30.md`) found ~93% are about the right bug;
-the rest are a single commit fixing several advisories, credited to all of them.
+The 338 are **run-level transitions**, not 338 confirmed advisory-specific
+reproductions. They include 11 rows whose fix-selection status is `indirect` and
+span 327 distinct selected fix-commit references. Fourteen have no extracted
+test name; a different 14 have no recorded failed-test identifier. The other
+26 direct-method flags require run-state review.
 
-For comparison, the largest hand-built sets are Vul4J (79, Java) and Vul4Py
-(100, Python). This is automatic and across a whole ecosystem.
+Later local analysis added 108 synthetic partial-reversal flags and five
+alternate-commit flags, giving **477 provisional pipeline flags** across the 871
+test-path rows; 394 remain unresolved. The 113 later flags, merged manifest,
+and full evidence bundle are not released here. Of the 108 partial-reversal
+flags, 107 retain a patch and checkpoint summaries but not raw confirmation
+logs; one has neither patch nor checkpoint. The five alternate winners still
+need immutable winning-commit and run records. Keep these methods separate from
+the direct aggregate-log tier.
 
-## The 510 "had a test but not proven" cases
-
-`results/failure_reasons.json` gives each one a named reason with the log line
-that shows it. Grouped by what it would take to fix:
-
-| Group | Count | What it needs |
-|---|---|---|
-| A — test calls code the fix added | 245 | partial revert (see `PILE-A-SPEC.md`) |
-| B — our harness can do better | 69 | small build-setup rules |
-| C — needs real infrastructure | 71 | a database, C library, cluster, etc. |
-| D — passes on old code / weak test | 78 | try the other fix commits; run 3× |
-| E — unclassified | 47 | read case by case |
+An earlier hand review of 30 direct-method flags found 27 clear advisory/test
+matches, one partial match, and two wrong-advisory attributions from shared
+commits. Its sampling frame and seed were not recorded, so it is qualitative
+evidence rather than a cohort-wide accuracy estimate. Matched controls, a fresh
+unique-commit hand-check, and clean-machine replay have not yet run.
 
 ## Files
 
@@ -58,10 +60,14 @@ that shows it. Grouped by what it would take to fix:
 - `tools/gochain.py` — osv-resolver → gorepro for a list of advisories.
 - `tools/gosev.py` — list unique Go advisories by severity.
 - `tools/run.sh` — six parallel workers.
-- `results/go-critical-high.jsonl` — one line per advisory with the verdict.
-- `results/failure_reasons.json` — the 510 not-proven cases, each with a reason.
-- `results/go-critical-high-logs.tgz` — every test run's output (the evidence).
-- `handcheck-30.md` — manual check of 30 proven cases.
+- `results/go-critical-high.jsonl` — one line per selected advisory group. The
+  local working copy may contain later provisional flags absent from the
+  committed direct-path baseline.
+- `results/failure_reasons.json` — historical direct-path failure grouping;
+  its counts should not be combined with the later merged flag total.
+- `results/go-critical-high-logs.tgz` — retained direct-path run logs. It does
+  not contain raw confirmation logs for the later partial-reversal flags.
+- `handcheck-30.md` — non-random manual review of 30 direct-method flags.
 
 ## Pile A: tests that need the new API
 
@@ -92,9 +98,17 @@ python3 -I repro/tools/gorepro.py /tmp/pile-a ADVISORY_ID REPO_URL FIX_SHA \
   --pile-a --max-attempts 25
 ```
 
-## Honest limits
+## Limits and runner safety
 
-- No-test cases (630) cannot be proven this way; they need a generated test.
-- "Not proven" never means "safe" — it means not shown here, for the stated reason.
-- A proof shows the bug exists in the library, not that it is reachable in your
-  app. That is a separate question (see `govulncheck`).
+- No detected changed test in the selected commit is not evidence of safety;
+  existing, integration, separate-repository, or otherwise undetected tests
+  may still exist.
+- Package-level failure, build failure, timeout, or panic alone does not
+  establish the advisory-specific bug or the effective fix.
+- A confirmed library test still does not establish that a deployed application
+  contains the affected code, accepts attacker-controlled input, or is
+  exploitable. Review the actual deployed artifact and configuration.
+- The harness clones and executes historical third-party tests. Docker is not
+  a complete trust boundary; the current command allows network access for
+  dependency downloads. Use a throwaway worker with no credentials and
+  controlled egress. The original run does not report per-case cost or runtime.
