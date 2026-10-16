@@ -1,6 +1,6 @@
 # repro — collecting test signals from candidate Go fixes
 
-`osv-resolver` selects a **candidate** fix commit from an advisory's references.
+`osv-resolver` attempts to select a **candidate** fix commit from an advisory's references.
 This folder asks whether changed maintainer tests behave differently on that
 commit and its parent. The direct path runs tests on the candidate commit, then
 on its parent with the changed test files carried over.
@@ -24,7 +24,7 @@ and full merge provenance still need to be frozen for independent audit.
 
 | Observed workflow outcome | Advisory rows |
 |---|---:|
-| No changed Go test detected in the selected candidate fix | 630 |
+| No changed Go test detected in the selected candidate change | 630 |
 | Excluded before the test path | 24 |
 | Entered the test path | 871 |
 | Direct-method pipeline flags within the test path | 364 |
@@ -37,12 +37,15 @@ test name; a different 14 have no recorded failed-test identifier. The other
 26 direct-method flags require run-state review.
 
 Later local analysis added 108 synthetic partial-reversal flags and five
-alternate-commit flags, giving **477 provisional pipeline flags** across the 871
+retry/search flags, giving **477 provisional pipeline flags** across the 871
 test-path rows; 394 remain unresolved. The 113 later flags, merged manifest,
 and full evidence bundle are not released here. Of the 108 partial-reversal
 flags, 107 retain a patch and checkpoint summaries but not raw confirmation
-logs; one has neither patch nor checkpoint. The five alternate winners still
-need immutable winning-commit and run records. Keep these methods separate from
+logs; one has neither patch nor checkpoint. Of the five retry/search flags,
+three used a different candidate and two succeeded on the original candidate
+under a later attempt. Their merged rows retain stale original-run metadata;
+three winning references are PR-number forms. Resolve immutable winner SHAs
+and retain full run records. Keep these methods separate from
 the direct aggregate-log tier.
 
 An earlier hand review of 30 direct-method flags found 27 clear advisory/test
@@ -53,7 +56,7 @@ unique-commit hand-check, and clean-machine replay have not yet run.
 
 ## Files
 
-- `tools/gorepro.py` — reproduce one advisory (clone, pick Go version, run twice).
+- `tools/gorepro.py` — attempt one test comparison (clone, pick Go version, run the two sides).
 - `tools/partial_revert.py` — extract and reverse selected non-test hunks.
 - `tools/pile_a_eval.py` — attribute structured Go test failures to the selected test.
 - `tools/run_pile_a.py` — run and resume Pile A from the saved results.
