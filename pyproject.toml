@@ -1,16 +1,13 @@
 [project]
-name = "osv-resolver"
+name = "osv-resolver-repro"
 version = "0.1.0"
-description = "Turns a vulnerability advisory into the code change that fixed it."
+description = "Reproduction harness for osv-resolver: runs maintainer tests across a Go advisory's fix and its parent."
 requires-python = ">=3.9"
 dependencies = []
 
 [project.optional-dependencies]
 dev = ["pytest"]
 
-[build-system]
-requires = ["setuptools>=61"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-packages = ["osv_resolver"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
