@@ -7,3 +7,6 @@ venv/
 .DS_Store
 
 osv-resolver
+
+# raw build-server dump, not part of the published evidence
+repro/server-dump/
