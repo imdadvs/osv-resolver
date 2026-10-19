@@ -10,3 +10,6 @@ osv-resolver
 
 # raw build-server dump, not part of the published evidence
 repro/server-dump/
+
+# test suite kept local, not published
+tests/
