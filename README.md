@@ -32,28 +32,28 @@ this workflow.
 ## Usage
 
 ```bash
-go run . GO-2026-6494
-# or: go run . https://osv.dev/vulnerability/GO-2026-6494
+go run . GO-2026-6142
+# or: go run . https://osv.dev/vulnerability/GO-2026-6142
 ```
 
 This Go CLI fetches the advisory and prints annotated OSV JSON. It does not run
 regression tests. Use Go 1.27.2 or a compatible toolchain, plus network access
 to fetch the advisory and referenced patches.
 
-For a single Go reproduction experiment, install Git, Python 3, and Docker,
+To reproduce a single Go case end to end, install Git, Python 3, and Docker,
 then run from the repository root:
 
 ```bash
-python3 -I repro/tools/gorepro.py /tmp/osv-repro GO-2026-6494 https://github.com/rabbitmq/amqp091-go 669b42bf7b1d
+python3 -I repro/tools/gorepro.py /tmp/osv-repro \
+  GO-2026-6142 https://github.com/kube-logging/logging-operator cf437d7f1e05
 ```
 
 The arguments are work directory, advisory ID, repository URL, and candidate
-fix SHA. The harness prints a JSON verdict and writes parent/fixed logs under
-`/tmp/osv-repro/logs`. Inspect the named test and both logs before interpreting
-the verdict. The current direct classifier can accept a package-level failure
-without proving that the changed security test failed. See
-the blog post for the study's method-specific audit status; the merged
-manifest and full audit map have not yet been published.
+fix SHA. The harness prints a JSON verdict and writes the parent and fixed logs
+under the work directory. Inspect the named test and both logs before trusting
+the verdict: a package-level failure alone does not prove the changed security
+test failed. `repro/examples/` holds saved logs for this and other cases to
+compare against.
 
 Output is the input OSV record plus, under `database_specific`:
 
@@ -90,4 +90,5 @@ The larger study's merged evidence and independent replay are not yet public.
 go test ./...
 ```
 
-Fixtures are real OSV records, one per fix state.
+`release_test.go` checks the release-commit classifier; it needs no network or
+fixtures.

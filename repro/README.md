@@ -11,48 +11,22 @@ confirmed advisory-level result requires the same named test to execute, fail
 for the expected reason before the fix, pass after it, and match the advisory.
 None of these tests establishes deployed reachability or exploitability.
 
-## What was run
+## Reproduce one case
 
-The study selected **1,525** alias-deduplicated Go advisory groups labelled high
-or critical and containing a GitHub commit or pull-request reference, or a
-GitHub Git range. Those links are candidate fix references, not confirmed fixes.
-This selected cohort is not all Go vulnerabilities, and the counts below are
-not a reproduction rate or an estimate of method sensitivity. The OSV snapshot
-and full merge provenance still need to be frozen for independent audit.
+Install Git, Python 3, and Docker, then run from the repository root:
 
-## Result
+```bash
+python3 -I repro/tools/gorepro.py /tmp/osv-repro \
+  GO-2026-6142 https://github.com/kube-logging/logging-operator cf437d7f1e05
+```
 
-| Observed workflow outcome | Advisory rows |
-|---|---:|
-| No changed Go test detected in the selected candidate change | 630 |
-| Excluded before the test path | 24 |
-| Entered the test path | 871 |
-| Direct-method pipeline flags within the test path | 364 |
-| Archived direct-method aggregate old-fail/fixed-pass transitions | 338 |
+The harness clones the repo, runs the changed test on the fix commit and on its
+parent, prints a JSON verdict, and writes both logs under the work directory.
+Compare them against the saved pair in `examples/`.
 
-The 338 are **run-level transitions**, not 338 confirmed advisory-specific
-reproductions. They include 11 rows whose fix-selection status is `indirect` and
-span 327 distinct selected fix-commit references. Fourteen have no extracted
-test name; a different 14 have no recorded failed-test identifier. The other
-26 direct-method flags require run-state review.
-
-Later local analysis added 108 synthetic partial-reversal flags and five
-retry/search flags, giving **477 provisional pipeline flags** across the 871
-test-path rows; 394 remain unresolved. The 113 later flags, merged manifest,
-and full evidence bundle are not released here. Of the 108 partial-reversal
-flags, 107 retain a patch and checkpoint summaries but not raw confirmation
-logs; one has neither patch nor checkpoint. Of the five retry/search flags,
-three used a different candidate and two succeeded on the original candidate
-under a later attempt. Their merged rows retain stale original-run metadata;
-three winning references are PR-number forms. Resolve immutable winner SHAs
-and retain full run records. Keep these methods separate from
-the direct aggregate-log tier.
-
-An earlier hand review of 30 direct-method flags found 27 clear advisory/test
-matches, one partial match, and two wrong-advisory attributions from shared
-commits. Its sampling frame and seed were not recorded, so it is qualitative
-evidence rather than a cohort-wide accuracy estimate. Matched controls, a fresh
-unique-commit hand-check, and clean-machine replay have not yet run.
+A full run over every high/critical Go advisory is described in the write-up,
+not here. Those aggregate results are not published in this repo; `examples/`
+carries only the cases the write-up cites.
 
 ## Files
 
