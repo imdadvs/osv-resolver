@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or its method, please cite it as below."
+title: "osv-resolver"
+abstract: >-
+  Resolves an OSV vulnerability advisory to its fixing commit and uses the
+  maintainer's own regression test to reproduce the bug: the test fails on the
+  commit before the fix and passes on the fix.
+authors:
+  - family-names: Mohammed
+    given-names: Imdadullah
+repository-code: "https://github.com/imdadvs/osv-resolver"
+license: MIT
+date-released: "2026-10-19"
+keywords:
+  - vulnerability
+  - OSV
+  - security
+  - Go
+  - reproduction

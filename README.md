@@ -92,3 +92,7 @@ go test ./...
 
 `release_test.go` checks the release-commit classifier; it needs no network or
 fixtures.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
