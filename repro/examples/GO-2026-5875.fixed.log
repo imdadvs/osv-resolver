@@ -1,0 +1,20 @@
+docker run --rm --user 1000:1000 --memory 8g --cpus 4 -v /home/runner/work/gocache:/cache -v /home/runner/work/repos/GO-2026-5875:/src -w /src -e HOME=/tmp -e GOCACHE=/cache/build -e GOTOOLCHAIN=auto -e GOMODCACHE=/cache/mod -e GOFLAGS=-mod=mod golang:1.25 timeout 900 go test -count=1 -run ^(TestClusterImportHandler_ValidateAuthImage)$ ./pkg/api/norman/customization/clusterregistrationtokens
+
+ok  	github.com/rancher/rancher/pkg/api/norman/customization/clusterregistrationtokens	0.099s
+go: downloading github.com/rancher/norman v0.9.7
+go: downloading github.com/rancher/aks-operator v1.15.0-rc.2
+go: downloading github.com/rancher/ali-operator v1.15.0-rc.2
+go: downloading github.com/rancher/eks-operator v1.15.0-rc.2
+go: downloading github.com/rancher/fleet/pkg/apis v0.16.0-alpha.11
+go: downloading github.com/rancher/gke-operator v1.15.0-rc.2
+go: downloading github.com/rancher/lasso v0.2.9
+go: downloading github.com/rancher/wrangler/v3 v3.7.0
+go: downloading k8s.io/kubernetes v1.36.2
+go: downloading github.com/rancher/channelserver v0.11.0
+go: downloading sigs.k8s.io/cluster-api v1.13.2
+go: downloading k8s.io/apiextensions-apiserver v0.36.2
+go: downloading github.com/onsi/gomega v1.41.0
+go: downloading k8s.io/cli-runtime v0.36.2
+go: downloading github.com/rancher/apiserver v0.9.7
+go: downloading k8s.io/controller-manager v0.36.2
+

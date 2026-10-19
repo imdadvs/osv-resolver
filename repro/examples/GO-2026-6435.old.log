@@ -1,0 +1,16 @@
+docker run --rm --user 1000:1000 --memory 8g --cpus 4 -v /home/runner/work/gocache:/cache -v /home/runner/work/repos/GO-2026-6435:/src -w /src -e HOME=/tmp -e GOCACHE=/cache/build -e GOTOOLCHAIN=auto -e GOMODCACHE=/cache/mod -e GOFLAGS=-mod=mod golang:1.25 timeout 900 go test -count=1 -run ^(TestCmdGitClient_LegitRemoteOperations|TestCmdGitClient_OptionInjectionNeutralized|TestRepositoryValidate_AcceptsNormalURL|TestRepositoryValidate_RejectsOptionInjectionURL|TestValidateGitURL)$ ./db ./db_lib
+
+FAIL	github.com/semaphoreui/semaphore/db [build failed]
+--- FAIL: TestCmdGitClient_OptionInjectionNeutralized (0.01s)
+    --- FAIL: TestCmdGitClient_OptionInjectionNeutralized/GetLastRemoteCommitHash (0.00s)
+        CmdGitClient_injection_test.go:94: 
+            	Error Trace:	/src/db_lib/CmdGitClient_injection_test.go:94
+            	Error:      	file "/tmp/TestCmdGitClient_OptionInjectionNeutralized1574098279/002/PWNED" exists
+            	Test:       	TestCmdGitClient_OptionInjectionNeutralized/GetLastRemoteCommitHash
+            	Messages:   	payload must not be executed
+FAIL
+FAIL	github.com/semaphoreui/semaphore/db_lib	0.040s
+FAIL
+# github.com/semaphoreui/semaphore/db [github.com/semaphoreui/semaphore/db.test]
+db/git_url_test.go:32:11: undefined: ValidateGitURL
+

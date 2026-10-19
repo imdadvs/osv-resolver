@@ -1,0 +1,60 @@
+docker run --rm --user 1000:1000 --memory 8g --cpus 4 -v /home/runner/work/gocache:/cache -v /home/runner/work/repos/GO-2026-6142:/src -w /src/pkg/sdk -e HOME=/tmp -e GOCACHE=/cache/build -e GOTOOLCHAIN=auto -e GOMODCACHE=/cache/mod golang:1.25 timeout 900 go test -count=1 -run ^(TestRenderDirective_Injection)$ ./logging/model/render
+
+--- FAIL: TestRenderDirective_Injection (0.00s)
+    --- FAIL: TestRenderDirective_Injection/newline_in_value_is_escaped_into_a_single_quoted_line (0.00s)
+        fluent_injection_test.go:119: expected output to contain "x \"y\\n</record>\\n</filter>\\n<match **>\\n  @type exec\\n  command id\\n</match>\"", got:
+            <record>
+              x y
+              </record>
+              </filter>
+              <match **>
+                @type exec
+                command id
+              </match>
+            </record>
+    --- FAIL: TestRenderDirective_Injection/ruby_interpolation_is_neutralized_when_quoting (0.00s)
+        fluent_injection_test.go:119: expected output to contain "x \"a\\n\\#{Socket.gethostname}\"", got:
+            <record>
+              x a
+              #{Socket.gethostname}
+            </record>
+    --- FAIL: TestRenderDirective_Injection/quotes,_backslashes_and_tabs_are_escaped (0.00s)
+        fluent_injection_test.go:119: expected output to contain "x \"a\\nb\\\"c\\\\d\\te\"", got:
+            <record>
+              x a
+              b"c\d	e
+            </record>
+    --- FAIL: TestRenderDirective_Injection/newline_in_parameter_name_is_rejected (0.00s)
+        fluent_injection_test.go:110: expected error, got nil; output:
+            <record>
+              bad
+              </record>
+              <match **> v
+            </record>
+    --- FAIL: TestRenderDirective_Injection/newline_in_tag_is_rejected (0.00s)
+        fluent_injection_test.go:110: expected error, got nil; output:
+            <match x>
+            <match **>
+            </match>
+    --- FAIL: TestRenderDirective_Injection/newline_in_id_is_rejected (0.00s)
+        fluent_injection_test.go:110: expected error, got nil; output:
+            <match>
+              @id x
+              @type exec
+            </match>
+    --- FAIL: TestRenderDirective_Injection/newline_in_label_is_rejected (0.00s)
+        fluent_injection_test.go:110: expected error, got nil; output:
+            <match>
+              @label x
+              @type exec
+            </match>
+    --- FAIL: TestRenderDirective_Injection/newline_in_log_level_is_rejected (0.00s)
+        fluent_injection_test.go:110: expected error, got nil; output:
+            <match>
+              @log_level info
+              @type exec
+            </match>
+FAIL
+FAIL	github.com/kube-logging/logging-operator/pkg/sdk/logging/model/render	0.014s
+FAIL
+

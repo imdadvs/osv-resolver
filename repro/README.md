@@ -63,14 +63,10 @@ unique-commit hand-check, and clean-machine replay have not yet run.
 - `tools/gochain.py` — osv-resolver → gorepro for a list of advisories.
 - `tools/gosev.py` — list unique Go advisories by severity.
 - `tools/run.sh` — six parallel workers.
-- `results/go-critical-high.jsonl` — one line per selected advisory group. The
-  local working copy may contain later provisional flags absent from the
-  committed direct-path baseline.
-- `results/failure_reasons.json` — historical direct-path failure grouping;
-  its counts should not be combined with the later merged flag total.
-- `results/go-critical-high-logs.tgz` — retained direct-path run logs. It does
-  not contain raw confirmation logs for the later partial-reversal flags.
-- `handcheck-30.md` — non-random manual review of 30 direct-method flags.
+- `examples/` — before/after test logs for the cases in the write-up, one
+  `.old.log`/`.fixed.log` pair per advisory, each log headed by the exact
+  command that produced it. See `examples/README.md`. The full-ecosystem
+  result set is not published in this repo.
 
 ## Pile A: tests that need the new API
 

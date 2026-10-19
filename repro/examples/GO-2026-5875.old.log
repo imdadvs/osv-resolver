@@ -1,0 +1,40 @@
+docker run --rm --user 1000:1000 --memory 8g --cpus 4 -v /home/runner/work/gocache:/cache -v /home/runner/work/repos/GO-2026-5875:/src -w /src -e HOME=/tmp -e GOCACHE=/cache/build -e GOTOOLCHAIN=auto -e GOMODCACHE=/cache/mod -e GOFLAGS=-mod=mod golang:1.25 timeout 900 go test -count=1 -run ^(TestClusterImportHandler_ValidateAuthImage)$ ./pkg/api/norman/customization/clusterregistrationtokens
+
+--- FAIL: TestClusterImportHandler_ValidateAuthImage (0.01s)
+    --- FAIL: TestClusterImportHandler_ValidateAuthImage/contains_newline (0.00s)
+        import_test.go:51: 
+            	Error Trace:	/src/pkg/api/norman/customization/clusterregistrationtokens/import_test.go:51
+            	Error:      	Not equal: 
+            	            	expected: 400
+            	            	actual  : 200
+            	Test:       	TestClusterImportHandler_ValidateAuthImage/contains_newline
+        import_test.go:53: 
+            	Error Trace:	/src/pkg/api/norman/customization/clusterregistrationtokens/import_test.go:53
+            	Error:      	Should be true
+            	Test:       	TestClusterImportHandler_ValidateAuthImage/contains_newline
+    --- FAIL: TestClusterImportHandler_ValidateAuthImage/contains_space (0.00s)
+        import_test.go:51: 
+            	Error Trace:	/src/pkg/api/norman/customization/clusterregistrationtokens/import_test.go:51
+            	Error:      	Not equal: 
+            	            	expected: 400
+            	            	actual  : 200
+            	Test:       	TestClusterImportHandler_ValidateAuthImage/contains_space
+        import_test.go:53: 
+            	Error Trace:	/src/pkg/api/norman/customization/clusterregistrationtokens/import_test.go:53
+            	Error:      	Should be true
+            	Test:       	TestClusterImportHandler_ValidateAuthImage/contains_space
+    --- FAIL: TestClusterImportHandler_ValidateAuthImage/contains_multiline_content (0.00s)
+        import_test.go:51: 
+            	Error Trace:	/src/pkg/api/norman/customization/clusterregistrationtokens/import_test.go:51
+            	Error:      	Not equal: 
+            	            	expected: 400
+            	            	actual  : 200
+            	Test:       	TestClusterImportHandler_ValidateAuthImage/contains_multiline_content
+        import_test.go:53: 
+            	Error Trace:	/src/pkg/api/norman/customization/clusterregistrationtokens/import_test.go:53
+            	Error:      	Should be true
+            	Test:       	TestClusterImportHandler_ValidateAuthImage/contains_multiline_content
+FAIL
+FAIL	github.com/rancher/rancher/pkg/api/norman/customization/clusterregistrationtokens	0.210s
+FAIL
+

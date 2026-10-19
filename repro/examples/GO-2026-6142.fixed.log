@@ -1,0 +1,10 @@
+docker run --rm --user 1000:1000 --memory 8g --cpus 4 -v /home/runner/work/gocache:/cache -v /home/runner/work/repos/GO-2026-6142:/src -w /src/pkg/sdk -e HOME=/tmp -e GOCACHE=/cache/build -e GOTOOLCHAIN=auto -e GOMODCACHE=/cache/mod golang:1.25 timeout 900 go test -count=1 -run ^(TestRenderDirective_Injection)$ ./logging/model/render
+
+ok  	github.com/kube-logging/logging-operator/pkg/sdk/logging/model/render	0.021s
+go: downloading github.com/cisco-open/operator-tools v0.38.0
+go: downloading github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883
+go: downloading github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.91.0
+go: downloading github.com/prometheus-operator/prometheus-operator v0.91.0
+go: downloading k8s.io/kube-openapi v0.0.0-20260512234627-ef417d054102
+go: downloading k8s.io/apiextensions-apiserver v0.36.1
+
