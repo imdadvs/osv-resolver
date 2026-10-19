@@ -70,8 +70,8 @@ unique-commit hand-check, and clean-machine replay have not yet run.
 
 ## Pile A: tests that need the new API
 
-The partial-revert mode follows `PILE-A-SPEC.md`: start at a passing fixed
-commit, keep its tests and testdata, and reverse singles, pairs, then all code
+The partial-revert mode starts at a passing fixed
+commit, keeps its tests and testdata, and reverses singles, pairs, then all code
 hunks. Each successful candidate must fail the same developer test twice, and
 the fixed checkout must pass again. Results record `method: partial_revert`;
 missing APIs that prevent a full code revert from compiling are routed to
