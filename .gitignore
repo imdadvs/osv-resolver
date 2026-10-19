@@ -13,3 +13,4 @@ repro/server-dump/
 
 # test suite kept local, not published
 tests/
+truth_test.go
